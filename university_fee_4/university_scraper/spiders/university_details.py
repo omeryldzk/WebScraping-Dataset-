@@ -1,5 +1,7 @@
+# university_details/spiders/university_details.py
 import scrapy
 import csv
+from university_scraper.items import UniversityDetailsItem
 
 class UniversityDetailsSpider(scrapy.Spider):
     name = "university_details"
@@ -31,5 +33,5 @@ class UniversityDetailsSpider(scrapy.Spider):
                     'Üniversite': university_name,
                     'Bölüm/Fakülte': faculty_name.strip(),
                     'Ücret': fee_text.strip(),
-                    "Akademik yıl": 2022
-                }
+                    "Akademik yıl": 2024
+                } 

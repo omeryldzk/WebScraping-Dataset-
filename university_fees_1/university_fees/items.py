@@ -1,12 +1,9 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
+# university_fees/items.py
 import scrapy
 
-
 class UniversityFeesItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    universite = scrapy.Field()
+    bolum_fakulte = scrapy.Field()
+    ucret = scrapy.Field()
+    akademik_yil = scrapy.Field()
+    burs_orani = scrapy.Field()  # Yeni alan

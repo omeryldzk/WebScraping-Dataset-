@@ -1,7 +1,7 @@
 import scrapy
 
 class UniversityFeesSpider(scrapy.Spider):
-    name = "university_fees_2023_2024"
+    name = "university_fees_2023"
     start_urls = [
         'https://onedio.com/haber/ozel-universite-fiyatlari-2023-2024-hangi-bolum-ne-kadar-1156735'
     ]
@@ -22,7 +22,7 @@ class UniversityFeesSpider(scrapy.Spider):
                     "Üniversite": university_name,
                     "Bölüm/Fakülte": department,
                     "Ücret": fee,
-                    "Akademik yıl": 2022
+                    "Akademik yıl": 2023
                 }
 
 # To save the data as a CSV, run the command:
