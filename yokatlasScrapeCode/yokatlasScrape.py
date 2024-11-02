@@ -5,11 +5,25 @@ from scrapeFunctions import *
 #MAIN FUNCTION
 def main():
     #First we will select our program type option
-    selectOption("ea")
+    type = ""
+    while True:
+        type = input("Please enter the program type you wanna scrape (only available inputs are 'ea', 'söz', 'dil', 'say')('- 1' to exit)")
+        if type == "-1":
+            return
+        elif type == 'say' or type == 'söz' or type == 'dil' or type == 'ea':
+            break
+    selectOption(type)
     #We then decide numbers of elements in the table
     selectOption("100")
     #Then we decide the university type (private/government)
-    selectOption("Vakıf")
+    uniType = ""
+    while True:
+        uniType = input("Please enter the university type you wanna scrape (only available inputs are 'Devlet', 'Vakıf')('- 1' to exit)")
+        if uniType == "-1":
+            return
+        elif uniType == 'Devlet' or uniType == 'Vakıf':
+            break
+    selectOption(uniType)
     time.sleep(3)
 
     #This function can be applied to use the navigator bar at the bottom and start from a certain page
@@ -20,7 +34,7 @@ def main():
         rows = body.find_elements(By.XPATH,".//tr")
         for row in rows:
             original_window = enterDepartment(row)
-            scrapeDepartment(tempDict,writer)
+            scrapeDepartment(tempDict,writer,regionFile)
             csvfile.flush()
             exitDepartment(original_window)
     
@@ -29,16 +43,7 @@ def main():
     return
      
 
-#Creates the csv file, writes the header for all the features it will hold. 
-#It will utilize writer.writerow() function for entering new rows to the csv file
-csvfile = open("departments(test).csv", mode="a")
-writer = csv.DictWriter(csvfile, fieldnames=featurenames)
-writer.writeheader()
-tempDict = {}
-for i in featurenames:
-    tempDict[i] = None
-#Site link and path for utilizing the webdriver are introduced to the code. Then it opens the site on chrome by driver.get(site)
-driver.get(site)
+
 main()
 
 

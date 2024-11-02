@@ -10,13 +10,34 @@ from selenium.webdriver.common.keys import Keys
 import time
 import csv
 
-featurenames = ["academicYear","universityName","faculty","departmentName","idOSYM","programType","language","scholarshipRate","quota","occupancyRate","tuitionFee","universityLocation","baseRanking","avgAdmissionRanking","stdDeviationStudents","revenue","outOfCityStudentRate","outOfRegionStudentRate","totalPreference","weightedPreference","top1PreferenceRatio","top3PreferenceRatio","top9PreferenceRatio","avgOrderofPreference","tuitionFeeIncrease","avgAdmittedStudentPrefOrder","top1AdmittedRatio","top3AdmittedRatio","top10AdmittedRatio","admittedPrefTrendRatio","admittedGovPref", "admittedPrivPref"]
+featurenames = ["academicYear","universityName","faculty","departmentName","idOSYM","programType","language","scholarshipRate","quota","occupancyRate","tuitionFee","universityFoundingYear","facultyFoundingYear","universityLocation","universityRegion","profCount","assoCount","docCount","baseRanking","topRanking","avgAdmissionRanking(TYT)","baseAdmissionRanking(TYT)","stdDeviationStudents","revenue","outOfCityStudentRate","sameRegionStudentRate","totalPreference","weightedPreference","top1PreferenceRatio","top3PreferenceRatio","top9PreferenceRatio","avgOrderofPreference","tuitionFeeIncrease","avgAdmittedStudentPrefOrder","top1AdmittedRatio","top3AdmittedRatio","top10AdmittedRatio","admittedPrefTrendRatio","admittedGovPref", "admittedPrivPref","admittedTotalPref","admittedTotalDepartmentPref","currentStudentCount"]
 
+# ,"currentYearGraduateCount","previousYearGraduateCount","nextYearGraduateCount"
+# cityRegions = [("","İç Anadolu"),
+#                ("","Karadeniz"),
+#                ("","Güneydoğu Anadolu"),
+#                ("","Doğu Anadolu"),
+#                ("","Ege"),
+#                ("","Akdeniz"),
+#                ("","Marmara")]
+
+#Creates the csv file, writes the header for all the features it will hold. 
+#It will utilize writer.writerow() function for entering new rows to the csv file
+file = open("SehirlerBolgeler.csv", mode="r", encoding="utf8")
+regionFile = csv.reader(file, delimiter=",")
+csvfile = open("departments(test).csv", mode="a")
+writer = csv.DictWriter(csvfile, fieldnames=featurenames)
+writer.writeheader()
+tempDict = {}
+for i in featurenames:
+    tempDict[i] = None
+#Site link and path for utilizing the webdriver are introduced to the code. Then it opens the site on chrome by driver.get(site)
 site = 'https://yokatlas.yok.gov.tr/tercih-sihirbazi-t4-tablo.php?p=say'
 path = 'C:\\Users\\AliCe\\OneDrive\\Belgeler\\chrome driver\\chromedriver-win64\\chromedriver.exe'
 cService = webdriver.ChromeService(executable_path = path)
 driver = webdriver.Chrome(service = cService)
 wait = WebDriverWait(driver, 10)
+driver.get(site)
 
 #This function closes the popup warning that comes to screen if it does exist.
 def closePopUp():
@@ -54,19 +75,20 @@ def clickYear(year):
     else:
         yearButton = yearButton.find_element(By.XPATH, "./..")
         yearButton.click()   
-    time.sleep(1)
     return 0
 
 
 
 #Returns the tables of the given section name. Also scrapes the language, department name and scholarship information from the header
-def searchInSection(sectionName,tempDict):
+def searchInSection(sectionName,tempDict,regionfile):
     if sectionName == "genelBilgiler":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@style="margin:0px;background-color:#646464;"]""")))
         title = driver.find_element(By.XPATH, """//div[@style="margin:0px;background-color:#646464;"]""")
         titleAll = title.find_element(By.XPATH,""".//h3[@class="panel-title pull-left"]""").text
         titleAll = titleAll[titleAll.index("(") + len("("):]
         titleAll = titleAll.strip(")")
+        region = determineRegion(regionfile,titleAll)
+        tempDict["universityRegion"] = region
         tempDict["universityLocation"] = titleAll
         
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1000_1"]""")))
@@ -100,33 +122,58 @@ def searchInSection(sectionName,tempDict):
                 tableHeader = tableHeader.replace("(%75 İndirimli)","")
         tempDict["departmentName"] = tableHeader  
         return tables   
-    if sectionName == "region":
+    elif sectionName == "region":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1020ab"]""")))
         regions = driver.find_element(By.XPATH, """//div[@id="icerik_1020ab"]""")
-        table = regions.find_element(By.XPATH, """.//table""") 
-        return table       
-    if sectionName == "preference":
+        tables = regions.find_elements(By.XPATH, """.//table[@class="table table-bordered"]""") 
+        return tables       
+    elif sectionName == "preference":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1080"]""")))
         preference = driver.find_element(By.XPATH, """//div[@id="icerik_1080"]""")
         table = preference.find_element(By.XPATH, """.//table""")
         return table
-    if sectionName == "admittedOrder":
+    elif sectionName == "admittedOrder":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1040"]""")))
         admitted = driver.find_element(By.XPATH, """//div[@id="icerik_1040"]""")
         table = admitted.find_element(By.XPATH, ".//table")
         return table
-    if sectionName == "prefTrend":
+    elif sectionName == "prefTrend":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1310"]""")))
         prefTrend = driver.find_element(By.XPATH, """//div[@id="icerik_1310"]""")
         table = prefTrend.find_element(By.XPATH, ".//table")
         return table
-    if sectionName == "average":
+    elif sectionName == "average":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1230"]""")))
         average = driver.find_element(By.XPATH, """//div[@id="icerik_1230"]""")
+        tables = average.find_elements(By.XPATH, ".//table")
+        return tables
+    elif sectionName == "admittedPref":
+        wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1300"]""")))
+        average = driver.find_element(By.XPATH, """//div[@id="icerik_1300"]""")
+        table = average.find_element(By.XPATH, """.//table[@class="table table-bordered"]""")
+        return table
+    elif sectionName == "admittedSameDepartmentPref":
+        wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1340a"]""")))
+        average = driver.find_element(By.XPATH, """//div[@id="icerik_1340a"]""")
         table = average.find_element(By.XPATH, ".//table")
         return table
-
-def searchInTable(table,tabletype,tempDict):
+    elif sectionName == "academics":
+        wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_2050"]""")))
+        average = driver.find_element(By.XPATH, """//div[@id="icerik_2050"]""")
+        table = average.find_element(By.XPATH, ".//table")
+        return table
+    elif sectionName == "totalStudent":
+        wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_2010"]""")))
+        average = driver.find_element(By.XPATH, """//div[@id="icerik_2010"]""")
+        table = average.find_element(By.XPATH, ".//table")
+        return table
+    # elif sectionName == "totalGraduate":
+    #     wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_2030"]""")))
+    #     average = driver.find_element(By.XPATH, """//div[@id="icerik_2030"]""")
+    #     table = average.find_element(By.XPATH, ".//table")
+    #     return table
+    
+def searchInTable(table,tabletype,tempDict,tableCount):
     body = table.find_element(By.XPATH, ".//tbody")
     rows = body.find_elements(By.XPATH, ".//tr")
     if tabletype == "genelBilgiler":
@@ -146,18 +193,18 @@ def searchInTable(table,tabletype,tempDict):
                 tempDict["occupancyRate"] = int(row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text) if row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text != "---" else 0 / int(tempDict["quota"]) * 100
             elif leftCell == "0,12 Katsayı ile Yerleşen Son Kişinin Başarı Sırası *" or leftCell == "0,12 Katsayı ile Yerleşen Son Kişinin Başarı Sırası*":
                 tempDict["baseRanking"] = row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text
+            elif leftCell.find("Tavan Başarı Sırası(0,12) *") != -1 or leftCell.find("Tavan Başarı Sırası(0,12)*") != -1:
+                tempDict["topRanking"] = row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text
     elif tabletype == "region":
         for row in rows:
-            try:
-                leftCellLoc = row.find_element(By.XPATH,""".//td[@class="thb text-left"]""")
-            except NoSuchElementException:
-                continue
-            else:
-                leftCell = leftCellLoc.text
-                if leftCell == "Farklı Şehir":
-                    cols = row.find_elements(By.XPATH, """.//td""")
-                    col = cols[2].text
-                    tempDict["outOfCityStudentRate"] = col
+            cols = row.find_elements(By.XPATH, """.//td""")
+            leftCell = cols[0].text
+            if leftCell == "Farklı Şehir":
+                col = cols[2].text
+                tempDict["outOfCityStudentRate"] = col
+            elif leftCell == tempDict["universityRegion"]:
+                col = cols[2].text
+                tempDict["sameRegionStudentRate"] = col
     elif tabletype == "preference":
         for row in rows:
             try:
@@ -208,56 +255,116 @@ def searchInTable(table,tabletype,tempDict):
     elif tabletype == "average":
         for row in rows:
             leftCell = row.find_element(By.XPATH, """.//td[@class="thb text-left"]""").text
-            if leftCell == "TYT":
-                tempDict["avgAdmissionRanking"] = row.find_element(By.XPATH, """.//td[@align="center"]""").text
+            if leftCell == "TYT" and tableCount == 0:
+                tempDict["avgAdmissionRanking(TYT)"] = row.find_element(By.XPATH, """.//td[@align="center"]""").text
+            elif leftCell == "TYT" and tableCount == 1:
+                tempDict["baseAdmissionRanking(TYT)"] = row.find_element(By.XPATH, """.//td[@align="center"]""").text
+    elif tabletype == "admittedPref":
+        for row in rows:
+            leftCell = row.find_element(By.XPATH, """.//td[@class="thb"]""").text
+            if leftCell == "Kullanılan Tercih":
+                tempDict["admittedTotalPref"] = row.find_element(By.XPATH, """.//td[@align="center"]""").text
+            
+    elif tabletype == "admittedSameDepartmentPref":
+        for row in rows:
+            leftCell = row.find_element(By.XPATH, """.//td[@width="60%"]""").text
+            tempDict["admittedTotalPref"] = row.find_element(By.XPATH, """.//td[@class="text-center"]""").text
+            break
+    elif tabletype == "academics":
+        for row in rows:
+            cols = row.find_elements(By.XPATH, """.//td""")
+            if cols[0].text == "Profesör":
+                tempDict["profCount"] = cols[1].text
+            elif cols[0].text == "Doçent":
+                tempDict["assoCount"] = cols[1].text
+            elif cols[0].text == "Doktor Öğretim Üyesi":
+                tempDict["docCount"] = cols[1].text
+    elif tabletype == "totalStudent":
+        for row in rows:
+            # leftCell = row.find_element(By.XPATH, """.//td[@class="thr"]""").text
+            cols = row.find_elements(By.XPATH, """.//td""")
+            col = cols[1].text
+            tempDict["currentStudentCount"] = col
+            break
+    # elif tabletype == "totalGraduate":
+    #     for row in rows:
+    #         academicYear = int(tempDict["academicYear"])
+    #         cols = row.find_elements(By.XPATH, """.//td""")
+    #         leftCell = cols[0].text
+    #         if leftCell.find(str(academicYear)) != -1:
+    #             tempDict["currentYearGraduateCount"]
+    #         if leftCell.find(str(academicYear - 1) != -1):
+                
+            
     return
 
 
 #This function is for after entering the page of one Department. Scrapes the data of all academic years existing for that Department to the csv file.
-def scrapeDepartment(tempDict,writer):
+def scrapeDepartment(tempDict,writer,regionfile):
     if driver.current_url == "https://yokatlas.yok.gov.tr/lisans-anasayfa.php" or driver.current_url == "https://yokatlas.yok.gov.tr/2022/lisans-anasayfa.php" or driver.current_url == "https://yokatlas.yok.gov.tr/2021/lisans-anasayfa.php":
         return
     closePopUp()
     year = 2023
-    for i in range(1,3):
+    for i in range(0,3):
         if driver.current_url == "https://yokatlas.yok.gov.tr/lisans-anasayfa.php" or driver.current_url == "https://yokatlas.yok.gov.tr/2022/lisans-anasayfa.php" or driver.current_url == "https://yokatlas.yok.gov.tr/2021/lisans-anasayfa.php":
             break
         
         closePopUp()
         openAll()
         
-        tempDict["academicYear"] = year
+        tempDict["academicYear"] = year - i
+        tableCount = 0
         
         tableType = "genelBilgiler"
-        tables = searchInSection(tableType,tempDict)
+        tables = searchInSection(tableType,tempDict,regionfile)
         for table in tables:
-            searchInTable(table, tableType, tempDict)
+            searchInTable(table, tableType, tempDict,tableCount)
         
         tableType = "region"
-        table = searchInSection(tableType,tempDict)
-        searchInTable(table,tableType, tempDict)
+        tables = searchInSection(tableType,tempDict,regionfile)
+        for table in tables:
+            searchInTable(table,tableType, tempDict,tableCount)
         
         tableType = "preference"
-        table = searchInSection(tableType,tempDict)
-        searchInTable(table, tableType, tempDict)
+        table = searchInSection(tableType,tempDict,regionfile)
+        searchInTable(table, tableType, tempDict,tableCount)
         
         tableType = "admittedOrder"
-        table = searchInSection(tableType,tempDict)
-        searchInTable(table, tableType, tempDict)
+        table = searchInSection(tableType,tempDict,regionfile)
+        searchInTable(table, tableType, tempDict,tableCount)
         
         tableType = "prefTrend"
-        table = searchInSection(tableType,tempDict)
-        searchInTable(table, tableType, tempDict)
+        table = searchInSection(tableType,tempDict,regionfile)
+        searchInTable(table, tableType, tempDict,tableCount)
         
         tableType = "average"
-        table = searchInSection(tableType,tempDict)
-        searchInTable(table, tableType, tempDict)
+        tables = searchInSection(tableType,tempDict,regionfile)
+        for table in tables:
+            searchInTable(table, tableType, tempDict, tableCount)
+            tableCount += 1
         
+        tableType = "admittedPref"
+        table = searchInSection(tableType,tempDict,regionfile)
+        searchInTable(table, tableType, tempDict,tableCount)
+        
+        tableType = "admittedSameDepartmentPref"
+        table = searchInSection(tableType,tempDict,regionfile)
+        searchInTable(table, tableType, tempDict,tableCount)
+        
+        tableType = "academics"
+        table = searchInSection(tableType,tempDict,regionfile)
+        searchInTable(table, tableType, tempDict,tableCount)
+        
+        tableType = "totalStudent"
+        table = searchInSection(tableType,tempDict,regionfile)
+        searchInTable(table, tableType, tempDict,tableCount)
+        
+
         writer.writerow(tempDict)
         for a in featurenames:
             tempDict[a] = None
         
-        if clickYear(year-i) == 1:
+        if clickYear(year-i-1) == 1:
             break             
     return
 
@@ -305,3 +412,11 @@ def clickNextPageButton():
         return 0
     else:
         return 1
+    
+def determineRegion(regionfile,cityName):
+    file.seek(0)
+    region = ""
+    for row in regionfile:
+        if cityName == row[1]:
+            return row[2]
+    return region
