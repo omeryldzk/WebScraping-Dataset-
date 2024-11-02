@@ -12,20 +12,12 @@ import csv
 
 featurenames = ["academicYear","universityName","faculty","departmentName","idOSYM","programType","language","scholarshipRate","quota","occupancyRate","tuitionFee","universityFoundingYear","facultyFoundingYear","universityLocation","universityRegion","profCount","assoCount","docCount","baseRanking","topRanking","avgAdmissionRanking(TYT)","baseAdmissionRanking(TYT)","stdDeviationStudents","revenue","outOfCityStudentRate","sameRegionStudentRate","totalPreference","weightedPreference","top1PreferenceRatio","top3PreferenceRatio","top9PreferenceRatio","avgOrderofPreference","tuitionFeeIncrease","avgAdmittedStudentPrefOrder","top1AdmittedRatio","top3AdmittedRatio","top10AdmittedRatio","admittedPrefTrendRatio","admittedGovPref", "admittedPrivPref","admittedTotalPref","admittedTotalDepartmentPref","currentStudentCount"]
 
-# ,"currentYearGraduateCount","previousYearGraduateCount","nextYearGraduateCount"
-# cityRegions = [("","İç Anadolu"),
-#                ("","Karadeniz"),
-#                ("","Güneydoğu Anadolu"),
-#                ("","Doğu Anadolu"),
-#                ("","Ege"),
-#                ("","Akdeniz"),
-#                ("","Marmara")]
-
 #Creates the csv file, writes the header for all the features it will hold. 
 #It will utilize writer.writerow() function for entering new rows to the csv file
 file = open("SehirlerBolgeler.csv", mode="r", encoding="utf8")
 regionFile = csv.reader(file, delimiter=",")
-csvfile = open("departments(test).csv", mode="a")
+filename = input("Enter a file name either existing or a new file name (this wont truncate the file but only append to it.)")
+csvfile = open(filename, mode="a")
 writer = csv.DictWriter(csvfile, fieldnames=featurenames)
 writer.writeheader()
 tempDict = {}
@@ -56,11 +48,6 @@ def openAll():
 
 #This function selects the option with the given value
 def selectOption(value):
-    # try:
-    #     selection = driver.find_element(By.XPATH, "//option[@value=\"" + value + "\"]")
-    # except NoSuchElementException:
-    #     raise ValueError("NO SUCH OPTION EXISTS")
-    # else:
     wait.until(EC.presence_of_element_located((By.XPATH, "//option[@value=\"" + value + "\"]")))
     selection = driver.find_element(By.XPATH, "//option[@value=\"" + value + "\"]")
     selection.click()
@@ -167,11 +154,6 @@ def searchInSection(sectionName,tempDict,regionfile):
         average = driver.find_element(By.XPATH, """//div[@id="icerik_2010"]""")
         table = average.find_element(By.XPATH, ".//table")
         return table
-    # elif sectionName == "totalGraduate":
-    #     wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_2030"]""")))
-    #     average = driver.find_element(By.XPATH, """//div[@id="icerik_2030"]""")
-    #     table = average.find_element(By.XPATH, ".//table")
-    #     return table
     
 def searchInTable(table,tabletype,tempDict,tableCount):
     body = table.find_element(By.XPATH, ".//tbody")
@@ -286,16 +268,7 @@ def searchInTable(table,tabletype,tempDict,tableCount):
             col = cols[1].text
             tempDict["currentStudentCount"] = col
             break
-    # elif tabletype == "totalGraduate":
-    #     for row in rows:
-    #         academicYear = int(tempDict["academicYear"])
-    #         cols = row.find_elements(By.XPATH, """.//td""")
-    #         leftCell = cols[0].text
-    #         if leftCell.find(str(academicYear)) != -1:
-    #             tempDict["currentYearGraduateCount"]
-    #         if leftCell.find(str(academicYear - 1) != -1):
                 
-            
     return
 
 
