@@ -112,46 +112,55 @@ def searchInSection(sectionName,tempDict,regionfile):
     elif sectionName == "region":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1020ab"]""")))
         regions = driver.find_element(By.XPATH, """//div[@id="icerik_1020ab"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_1020ab table""")))
         tables = regions.find_elements(By.XPATH, """.//table[@class="table table-bordered"]""") 
         return tables       
     elif sectionName == "preference":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1080"]""")))
         preference = driver.find_element(By.XPATH, """//div[@id="icerik_1080"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_1080 table""")))
         table = preference.find_element(By.XPATH, """.//table""")
         return table
     elif sectionName == "admittedOrder":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1040"]""")))
         admitted = driver.find_element(By.XPATH, """//div[@id="icerik_1040"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_1040 table""")))
         table = admitted.find_element(By.XPATH, ".//table")
         return table
     elif sectionName == "prefTrend":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1310"]""")))
         prefTrend = driver.find_element(By.XPATH, """//div[@id="icerik_1310"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_1310 table""")))
         table = prefTrend.find_element(By.XPATH, ".//table")
         return table
     elif sectionName == "average":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1230"]""")))
         average = driver.find_element(By.XPATH, """//div[@id="icerik_1230"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_1230 table""")))
         tables = average.find_elements(By.XPATH, ".//table")
         return tables
     elif sectionName == "admittedPref":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1300"]""")))
         average = driver.find_element(By.XPATH, """//div[@id="icerik_1300"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_1300 table""")))
         table = average.find_element(By.XPATH, """.//table[@class="table table-bordered"]""")
         return table
     elif sectionName == "admittedSameDepartmentPref":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_1340a"]""")))
         average = driver.find_element(By.XPATH, """//div[@id="icerik_1340a"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_1340a table""")))
         table = average.find_element(By.XPATH, ".//table")
         return table
     elif sectionName == "academics":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_2050"]""")))
         average = driver.find_element(By.XPATH, """//div[@id="icerik_2050"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_2050 table""")))
         table = average.find_element(By.XPATH, ".//table")
         return table
     elif sectionName == "totalStudent":
         wait.until(EC.presence_of_element_located((By.XPATH, """//div[@id="icerik_2010"]""")))
         average = driver.find_element(By.XPATH, """//div[@id="icerik_2010"]""")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, """div#icerik_2010 table""")))
         table = average.find_element(By.XPATH, ".//table")
         return table
     
