@@ -194,7 +194,20 @@ def searchInTable(table,tabletype,tempDict,tableCount):
             elif leftCell == "Üniversite":
                 tempDict["universityName"] = row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text
             elif leftCell == "Fakülte / Yüksekokul":
-                tempDict["faculty"] = row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text
+                temp = row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text
+                if temp.find("(İngilizce)") != -1:
+                    temp = temp.replace(" (İngilizce) ","")
+                if temp.find("(Burslu)") != -1:
+                    temp = temp.replace("(Burslu)","")
+                if temp.find("(%50 İndirimli)") != -1:
+                    temp = temp.replace("(%50 İndirimli)","")
+                if temp.find("(Ücretli)") != -1:
+                    temp = temp.replace("(Ücretli)","")
+                if temp.find("(%25 İndirimli)") != -1:
+                    temp = temp.replace("(%25 İndirimli)","") 
+                if temp.find("(%75 İndirimli)") != -1:
+                    temp = temp.replace("(%75 İndirimli)","")                      
+                tempDict["faculty"] = temp
             elif leftCell == "Puan Türü":
                 tempDict["programType"] = row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text
             elif leftCell == "Genel Kontenjan":
