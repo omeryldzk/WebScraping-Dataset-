@@ -18,7 +18,7 @@ This README provides an overview of the features in the dataset, aimed at analyz
 | `universityFoundingYear`      | Year the university was founded (from YÖK statistics).                                                     |
 | `facultyFoundingYear`         | Year the faculty was founded (from YÖK statistics).                                                        |
 | `universityLocation`          | City where the university is located (in uppercase letters).                                               |
-| `universityRegion`            | Region where the university is located.                                                                    |
+| `universityRegion`            | Region where the university is located(from YÖK statistics).                                                                    |
 
 ---
 
@@ -56,10 +56,11 @@ This README provides an overview of the features in the dataset, aimed at analyz
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | `Inflation That Year`               | Annual inflation rate, impacting tuition fees and students’ financial situations.                           |
 | `Economic Growth Rate That Year`    | Growth rate of Turkey’s economy, which influences students' financial situations and demand for programs.  |
+| `Base Salary`                      | The national minimum wage for the year, which impacts students' financial situations and affordability considerations for university tuition and living expenses.  |
 | `Ranking URAP`                      | University’s URAP ranking, indicating academic performance and reputation, which can impact demand.         |
-| `Time for Graduates to Find a Job`  | Average time it takes graduates to find a job after completing their studies.                               |
-| `Avg Monthly Earnings by Department`| Average monthly earnings of graduates based on department, indicating income potential for new graduates.   |
-| `Employment Rate by Department`     | Employment rate of graduates in each department, indicating job market demand for specific fields.         |
+| `Time for Graduates to Find a Job`  | Average time it takes graduates to find a job after completing their studies.(TUİK)                               |
+| `Avg Monthly Earning Group by Department`| Average monthly earnings of graduates based on department, indicating income potential for new graduates.(TUİK)   |
+| `Employment Rate by Department`     | Employment rate of graduates in each department, indicating job market demand for specific fields.  (TUİK)       |
 
 ---
 
@@ -98,6 +99,8 @@ This README provides an overview of the features in the dataset, aimed at analyz
 |-------------------------------|-------------------------------------------------------------------------------------------------------------|
 | `outOfCityStudentRate`        | Percentage of students from outside the city.                                                               |
 | `sameRegionStundetRate`       | Percentage of students from the same region as the university.                                             |
+| `foreignStudentCountUni`       |Number of foreign students enrolled at the university, indicating its international appeal and diversity(from YÖK statistics).   |
+| `foreignStudentRatioUni`       |Ratio of foreign students to the total student population at the university, reflecting its internationalization level(from YÖK statistics).   |
 
 --- 
 
