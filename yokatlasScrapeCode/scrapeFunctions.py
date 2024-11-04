@@ -42,7 +42,7 @@ while True:
             break
 site = 'https://yokatlas.yok.gov.tr/tercih-sihirbazi-t4-tablo.php?p=say'
 if platform.system() == "Darwin":
-    path = './resources/mac_chrome_driver/chromedriver.exe'
+    path = './resources/mac_chrome_driver/chromedriver'
 elif platform.system() == "Windows":
     path = '.\\resources\\windows_chrome_driver\\chromedriver.exe'
 cService = webdriver.ChromeService(executable_path = path)
