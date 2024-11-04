@@ -1,43 +1,91 @@
-**Features and Their Descriptions:** <br/>
-academicYear -> Academic year of the departments data <br/>
-universityName -> Name of the university the department belongs to <br/>
-faculty -> Faculty name of the department <br/>
-departmentName -> Name of the department <br/>
-idOSYM -> OSYM id of the department (can be used to search for that departments data since the site uses this id for pages) <br/>
-programType -> The type of the program (say,söz,ea,dil) <br/>
-language -> Teaching language of the department (Turkish, English) <br/>
-scholarshipRate -> Amount of the scholarship rate (%0,%25,%50,%75,%100) <br/>
-quota -> Total quota of the department <br/>
-occupiedSlot -> Number of students admitted <br/>
-universityFoundingYear -> The year said university is founded (yökistatistik data) <br/>
-facultyFoundingYear -> The year said faculty is founded (yökistatistik data) <br/>
-universityLocation -> The city university is in. (name hold with all caps) <br/>
-universityRegion -> The region university is located in <br/>
-profCount -> Number of professors in the said faculty <br/>
-assoCount -> Number of associate professors in the said faculty <br/>
-docCount -> Number of doctors in the said faculty <br/>
-baseRanking -> Ranking of the last admitted student <br/>
-topRanking -> Ranking of the first admitted student <br/>
-avgAdmissionRanking(TYT) -> Average ranking of the admitted students in the TYT exam <br/>
-baseAdmissionRanking(TYT) -> Ranking of the last admitted student on the TYT exam <br/>
-stdDeviationStudents -> Standart deviation of students <br/>
-revenue -> Total revenue of the university from this department this year <br/>
-outOfCityStudentRate -> Percentage rate of admitted students coming from different cities <br/>
-sameRegionStundetRate -> Percengate rate of admitted students coming from the same region with university <br/>
-totalPreference -> Number of times the university was put in the preference list among all students <br/>
-weightedPreference -> Total preference weighted with the rank students put the department in their preference list (will be calculated from top1PreferenceRatio,top3PreferenceRatio,top9PreferenceRatio) <br/>
-top1PreferenceRatio -> Percentage rate of students who had this department on their list putting this department in their top spot <br/>
-top3PreferenceRatio -> Percentage rate of students who had this department on their list putting this department in one of their top 3 spots <br/>
-top9PreferenceRatio -> Percentage rate of students who had this department on their list putting this department in one of their top 9 spots <br/>
-avgOrderofPreference -> Average order the students preferred this department <br/>
-tuitionFeeIncrease -> Increase of tuition fee when the inflation is excluded <br/>
-avgAdmittedStudentPrefOrder -> Average order the admitted students placed this department in their preference list <br/>
-top1AdmittedRatio -> Percentage rate of students who were admitted putting this department in their top spot <br/>
-top3AdmittedRatio -> Percentage rate of students who were admitted putting this department in their top 3 spots <br/>
-top10AdmittedRatio -> Percentage rate of students who were admitted putting this department in their top 10 spots <br/>
-admittedPrefTrendRatio -> Ratio of admitted students putting private universities in their preference list over state universities <br/>
-admittedGovPref -> Number of state univerity preferences of the admitted students <br/>
-admittedPrivPref -> Number of private univerity preferences of the admitted students <br/>
-admittedTotalPref -> Total number of preferences used by the admitted students <br/>
-admittedTotalDepartmentPref -> Total number of same department preferences used by the admitted students <br/>
-currentStudentCount -> Current number of students studying in this department <br/>
+# Dataset Features and Descriptions
+
+This README provides an overview of the features in the dataset, aimed at analyzing department performance and student preferences to assist private universities in making informed decisions about establishing new departments.
+
+---
+
+## Academic and University Details
+
+| **Feature**                   | **Description**                                                                                             |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `academicYear`                | Academic year of the department data.                                                                       |
+| `universityName`              | Name of the university the department belongs to.                                                           |
+| `faculty`                     | Faculty name that houses the department.                                                                    |
+| `departmentName`              | Name of the department.                                                                                     |
+| `idOSYM`                      | OSYM ID of the department (used for searching department data on the site).                                |
+| `programType`                 | Type of the program (e.g., say, söz, ea, dil).                                                             |
+| `language`                    | Language of instruction in the department (e.g., Turkish, English).                                        |
+| `universityFoundingYear`      | Year the university was founded (from YÖK statistics).                                                     |
+| `facultyFoundingYear`         | Year the faculty was founded (from YÖK statistics).                                                        |
+| `universityLocation`          | City where the university is located (in uppercase letters).                                               |
+| `universityRegion`            | Region where the university is located.                                                                    |
+
+---
+
+## Admission and Student Data
+
+| **Feature**                   | **Description**                                                                                             |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `scholarshipRate`             | Scholarship rate provided by the department (%0, %25, %50, %75, %100).                                     |
+| `quota`                       | Total number of spots available in the department.                                                          |
+| `occupiedSlot`                | Number of students admitted to the department.                                                              |
+| `profCount`                   | Number of professors in the faculty.                                                                        |
+| `assoCount`                   | Number of associate professors in the faculty.                                                              |
+| `docCount`                    | Number of doctorate-level educators in the faculty.                                                         |
+| `baseRanking`                 | Ranking of the last admitted student.                                                                       |
+| `topRanking`                  | Ranking of the first admitted student.                                                                      |
+| `avgAdmissionRanking(TYT)`    | Average admission ranking of students based on the TYT exam.                                               |
+| `baseAdmissionRanking(TYT)`   | Admission ranking of the last student based on the TYT exam.                                               |
+| `stdDeviationStudents`        | Standard deviation in the student rankings.                                                                 |
+| `currentStudentCount`         | Current number of students enrolled in the department.                                                     |
+
+---
+
+## Revenue and Financial Information
+
+| **Feature**                   | **Description**                                                                                             |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `revenue`                     | Total revenue generated by the department for the year.                                                     |
+| `tuitionFeeIncrease`          | Tuition fee increase, adjusted for inflation.                                                               |
+
+---
+
+## Student Preference Data
+
+| **Feature**                   | **Description**                                                                                             |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `totalPreference`             | Number of times the department was listed in student preferences.                                          |
+| `weightedPreference`          | Total preference, weighted by the ranking at which students placed this department in their list.          |
+| `top1PreferenceRatio`         | Percentage of students who ranked this department as their top choice.                                     |
+| `top3PreferenceRatio`         | Percentage of students who ranked this department in their top 3 choices.                                  |
+| `top9PreferenceRatio`         | Percentage of students who ranked this department in their top 9 choices.                                  |
+| `avgOrderofPreference`        | Average rank order in student preferences for this department.                                             |
+
+---
+
+## Admitted Student Preference and Trends
+
+| **Feature**                   | **Description**                                                                                             |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `avgAdmittedStudentPrefOrder` | Average order in admitted students' preference lists for this department.                                  |
+| `top1AdmittedRatio`           | Percentage of admitted students who ranked this department as their top choice.                            |
+| `top3AdmittedRatio`           | Percentage of admitted students who ranked this department in their top 3 choices.                         |
+| `top10AdmittedRatio`          | Percentage of admitted students who ranked this department in their top 10 choices.                        |
+| `admittedPrefTrendRatio`      | Ratio of admitted students preferring private over state universities.                                      |
+| `admittedGovPref`             | Number of admitted students with state university preferences.                                             |
+| `admittedPrivPref`            | Number of admitted students with private university preferences.                                           |
+| `admittedTotalPref`           | Total number of preferences made by admitted students.                                                     |
+| `admittedTotalDepartmentPref` | Total number of preferences for the same department by admitted students.                                  |
+
+---
+
+## Geographic and Demographic Data
+
+| **Feature**                   | **Description**                                                                                             |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `outOfCityStudentRate`        | Percentage of students from outside the city.                                                               |
+| `sameRegionStundetRate`       | Percentage of students from the same region as the university.                                             |
+
+--- 
+
+This dataset provides comprehensive data across various domains to assist in strategic decision-making for new department offerings in private universities.
