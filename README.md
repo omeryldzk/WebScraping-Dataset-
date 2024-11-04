@@ -50,6 +50,19 @@ This README provides an overview of the features in the dataset, aimed at analyz
 
 ---
 
+## Economic and Ranking Indicators
+
+| **Feature**                         | **Description**                                                                                             |
+|-------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `Inflation That Year`               | Annual inflation rate, impacting tuition fees and students’ financial situations.                           |
+| `Economic Growth Rate That Year`    | Growth rate of Turkey’s economy, which influences students' financial situations and demand for programs.  |
+| `Ranking URAP`                      | University’s URAP ranking, indicating academic performance and reputation, which can impact demand.         |
+| `Time for Graduates to Find a Job`  | Average time it takes graduates to find a job after completing their studies.                               |
+| `Avg Monthly Earnings by Department`| Average monthly earnings of graduates based on department, indicating income potential for new graduates.   |
+| `Employment Rate by Department`     | Employment rate of graduates in each department, indicating job market demand for specific fields.         |
+
+---
+
 ## Student Preference Data
 
 | **Feature**                   | **Description**                                                                                             |
