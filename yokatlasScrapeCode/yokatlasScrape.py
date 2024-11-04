@@ -5,24 +5,10 @@ from scrapeFunctions import *
 #MAIN FUNCTION
 def main():
     #First we will select our program type option
-    type = ""
-    while True:
-        type = input("Please enter the program type you wanna scrape (only available inputs are 'ea', 'söz', 'dil', 'say')('- 1' to exit)")
-        if type == "-1":
-            return
-        elif type == 'say' or type == 'söz' or type == 'dil' or type == 'ea':
-            break
     selectOption(type)
     #We then decide numbers of elements in the table
     selectOption("100")
     #Then we decide the university type (private/government)
-    uniType = ""
-    while True:
-        uniType = input("Please enter the university type you wanna scrape (only available inputs are 'Devlet', 'Vakıf')('- 1' to exit)")
-        if uniType == "-1":
-            return
-        elif uniType == 'Devlet' or uniType == 'Vakıf':
-            break
     selectOption(uniType)
     time.sleep(3)
 

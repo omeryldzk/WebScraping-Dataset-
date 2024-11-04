@@ -9,14 +9,16 @@ from selenium.webdriver.common.keys import Keys
 
 import time
 import csv
+import os
+import platform
 
-featurenames = ["academicYear","universityName","faculty","departmentName","idOSYM","programType","language","scholarshipRate","quota","occupancyRate","tuitionFee","universityFoundingYear","facultyFoundingYear","universityLocation","universityRegion","profCount","assoCount","docCount","baseRanking","topRanking","avgAdmissionRanking(TYT)","baseAdmissionRanking(TYT)","stdDeviationStudents","revenue","outOfCityStudentRate","sameRegionStudentRate","totalPreference","weightedPreference","top1PreferenceRatio","top3PreferenceRatio","top9PreferenceRatio","avgOrderofPreference","tuitionFeeIncrease","avgAdmittedStudentPrefOrder","top1AdmittedRatio","top3AdmittedRatio","top10AdmittedRatio","admittedPrefTrendRatio","admittedGovPref", "admittedPrivPref","admittedTotalPref","admittedTotalDepartmentPref","currentStudentCount"]
+featurenames = ["academicYear","universityName","faculty","departmentName","idOSYM","programType","language","scholarshipRate","quota","occupiedSlots","tuitionFee","universityFoundingYear","facultyFoundingYear","universityLocation","universityRegion","profCount","assoCount","docCount","baseRanking","topRanking","avgAdmissionRanking(TYT)","baseAdmissionRanking(TYT)","stdDeviationStudents","revenue","outOfCityStudentRate","sameRegionStudentRate","totalPreference","weightedPreference","top1PreferenceRatio","top3PreferenceRatio","top9PreferenceRatio","avgOrderofPreference","tuitionFeeIncrease","avgAdmittedStudentPrefOrder","top1AdmittedRatio","top3AdmittedRatio","top10AdmittedRatio","admittedPrefTrendRatio","admittedGovPref", "admittedPrivPref","admittedTotalPref","admittedTotalDepartmentPref","currentStudentCount"]
 
 #Creates the csv file, writes the header for all the features it will hold. 
 #It will utilize writer.writerow() function for entering new rows to the csv file
 file = open("SehirlerBolgeler.csv", mode="r", encoding="utf8")
 regionFile = csv.reader(file, delimiter=",")
-filename = input("Enter a file name either existing or a new file name (this wont truncate the file but only append to it.)")
+filename = input("Enter a file name either existing or a new file name (this wont truncate the file but only append to it.) (Please include the file extension '.csv')")
 csvfile = open(filename, mode="a")
 writer = csv.DictWriter(csvfile, fieldnames=featurenames)
 writer.writeheader()
@@ -24,8 +26,25 @@ tempDict = {}
 for i in featurenames:
     tempDict[i] = None
 #Site link and path for utilizing the webdriver are introduced to the code. Then it opens the site on chrome by driver.get(site)
+while True:
+        type = input("Please enter the program type you wanna scrape (only available inputs are 'ea', 'söz', 'dil', 'say')('- 1' to exit)")
+        if type == "-1":
+            type = ""
+            break
+        elif type == 'say' or type == 'söz' or type == 'dil' or type == 'ea':
+            break
+while True:
+        uniType = input("Please enter the university type you wanna scrape (only available inputs are 'Devlet', 'Vakıf')('- 1' to exit)")
+        if uniType == "-1":
+            uniType = ""
+            break
+        elif uniType == 'Devlet' or uniType == 'Vakıf':
+            break
 site = 'https://yokatlas.yok.gov.tr/tercih-sihirbazi-t4-tablo.php?p=say'
-path = 'C:\\Users\\AliCe\\OneDrive\\Belgeler\\chrome driver\\chromedriver-win64\\chromedriver.exe'
+if platform.system() == "Darwin":
+    path = './resources/mac_chrome_driver/chromedriver.exe'
+elif platform.system() == "Windows":
+    path = '.\\resources\\windows_chrome_driver\\chromedriver.exe'
 cService = webdriver.ChromeService(executable_path = path)
 driver = webdriver.Chrome(service = cService)
 wait = WebDriverWait(driver, 10)
@@ -181,7 +200,7 @@ def searchInTable(table,tabletype,tempDict,tableCount):
             elif leftCell == "Genel Kontenjan":
                 tempDict["quota"] = row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text
             elif leftCell == "Genel Kontenjana Yerleşen":
-                tempDict["occupancyRate"] = int(row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text) if row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text != "---" else 0 / int(tempDict["quota"]) * 100
+                tempDict["occupiedSlots"] = int(row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text) if row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text != "---" else 0 / int(tempDict["quota"]) * 100
             elif leftCell == "0,12 Katsayı ile Yerleşen Son Kişinin Başarı Sırası *" or leftCell == "0,12 Katsayı ile Yerleşen Son Kişinin Başarı Sırası*":
                 tempDict["baseRanking"] = row.find_element(By.XPATH,""".//td[@class="text-center vert-align"]""").text
             elif leftCell.find("Tavan Başarı Sırası(0,12) *") != -1 or leftCell.find("Tavan Başarı Sırası(0,12)*") != -1:
@@ -259,7 +278,7 @@ def searchInTable(table,tabletype,tempDict,tableCount):
     elif tabletype == "admittedSameDepartmentPref":
         for row in rows:
             leftCell = row.find_element(By.XPATH, """.//td[@width="60%"]""").text
-            tempDict["admittedTotalPref"] = row.find_element(By.XPATH, """.//td[@class="text-center"]""").text
+            tempDict["admittedTotalDepartmentPref"] = row.find_element(By.XPATH, """.//td[@class="text-center"]""").text
             break
     elif tabletype == "academics":
         for row in rows:
