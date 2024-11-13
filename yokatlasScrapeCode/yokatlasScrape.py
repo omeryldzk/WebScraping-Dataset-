@@ -4,6 +4,8 @@ from scrapeFunctions import *
 
 #MAIN FUNCTION
 def main():
+    if type == "" or uniType == "" or startPage == "":
+        return
     #First we will select our program type option
     selectOption(type)
     #We then decide numbers of elements in the table
@@ -13,7 +15,8 @@ def main():
     time.sleep(3)
 
     #This function can be applied to use the navigator bar at the bottom and start from a certain page
-    # clickPageButton("4")
+    for i in range(0,startPage-1):
+        clickNextPageButton()
     while True:
         temp = driver.find_element(By.XPATH,"""//table[@id="mydata"]""")
         body = temp.find_element(By.XPATH,".//tbody")
