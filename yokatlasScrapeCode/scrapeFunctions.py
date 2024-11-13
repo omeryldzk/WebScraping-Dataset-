@@ -16,15 +16,7 @@ featurenames = ["academicYear","universityName","faculty","departmentName","idOS
 
 #Creates the csv file, writes the header for all the features it will hold. 
 #It will utilize writer.writerow() function for entering new rows to the csv file
-file = open("SehirlerBolgeler.csv", mode="r", encoding="utf8")
-regionFile = csv.reader(file, delimiter=",")
-filename = input("Enter a file name either existing or a new file name (this wont truncate the file but only append to it.) (Please include the file extension '.csv')")
-csvfile = open(filename, mode="a")
-writer = csv.DictWriter(csvfile, fieldnames=featurenames)
-writer.writeheader()
-tempDict = {}
-for i in featurenames:
-    tempDict[i] = None
+
 #Site link and path for utilizing the webdriver are introduced to the code. Then it opens the site on chrome by driver.get(site)
 while True:
         type = input("Please enter the program type you wanna scrape (only available inputs are 'ea', 'söz', 'dil', 'say')('- 1' to exit)")
@@ -40,6 +32,26 @@ while True:
             break
         elif uniType == 'Devlet' or uniType == 'Vakıf':
             break
+startPage = 0
+while True:
+        pageNum = input("Please enter the page you want your scraping to start at ('- 1' to exit)")
+        if pageNum == "-1":
+            pageNum = ""
+            break
+        elif int(pageNum) > 0:
+            startPage = int(pageNum)
+            break
+file = open("SehirlerBolgeler.csv", mode="r", encoding="utf8")
+regionFile = csv.reader(file, delimiter=",")
+filename = input("Enter a file name either existing or a new file name (this wont truncate the file but only append to it.) (Please include the file extension '.csv')")
+csvfile = open(filename, mode="a")
+writer = csv.DictWriter(csvfile, fieldnames=featurenames)
+if(startPage <= 1):
+    writer.writeheader()
+tempDict = {}
+for i in featurenames:
+    tempDict[i] = None            
+
 site = 'https://yokatlas.yok.gov.tr/tercih-sihirbazi-t4-tablo.php?p=say'
 if platform.system() == "Darwin":
     path = './resources/mac_chrome_driver/chromedriver'
@@ -47,7 +59,7 @@ elif platform.system() == "Windows":
     path = '.\\resources\\windows_chrome_driver\\chromedriver.exe'
 cService = webdriver.ChromeService(executable_path = path)
 driver = webdriver.Chrome(service = cService)
-wait = WebDriverWait(driver, 10)
+wait = WebDriverWait(driver, 30)
 driver.get(site)
 
 #This function closes the popup warning that comes to screen if it does exist.
@@ -62,23 +74,27 @@ def closePopUp():
 #This function finds and clicks the "Hepsini Aç"(open all) button then waits 0.2 seconds to ensure clickable is open by the time we start scraping.
 def openAll():
     wait.until(EC.presence_of_element_located((By.XPATH, """//a[@class="label label-success openall"]""")))
+    wait.until(EC.element_to_be_clickable((By.XPATH, """//a[@class="label label-success openall"]""")))
     open_all_button = driver.find_element(By.XPATH, """//a[@class="label label-success openall"]""")
     open_all_button.click()
 
 #This function selects the option with the given value
 def selectOption(value):
     wait.until(EC.presence_of_element_located((By.XPATH, "//option[@value=\"" + value + "\"]")))
+    wait.until(EC.element_to_be_clickable((By.XPATH, "//option[@value=\"" + value + "\"]")))
     selection = driver.find_element(By.XPATH, "//option[@value=\"" + value + "\"]")
     selection.click()
 
 #Clicks the academic year sections in the department page
 def clickYear(year):
+    wait.until(EC.presence_of_element_located((By.XPATH, """//div[@class="panel panel-default"]""")))
     temp = driver.find_element(By.XPATH,"""//div[@class="panel panel-default"]""")
     try:
         yearButton = temp.find_element(By.XPATH, ".//font[text()=\"" + str(year) + " Yılı\"]")
     except NoSuchElementException:
         return 1 
     else:
+        wait.until(EC.element_to_be_clickable((By.XPATH, ".//font[text()=\"" + str(year) + " Yılı\"]")))
         yearButton = yearButton.find_element(By.XPATH, "./..")
         yearButton.click()   
     return 0
@@ -405,10 +421,12 @@ def exitDepartment(original_window):
 def clickPageButton(buttonName):
     buttonTab = driver.find_element(By.XPATH, """//div[@id="mydata_paginate"]""")
     try:
+        wait.until(EC.presence_of_element_located((By.XPATH, ".//a[text()=\"" + buttonName + "\"]")))
         button = buttonTab.find_element(By.XPATH, ".//a[text()=\"" + buttonName + "\"]")
     except NoSuchElementException:
         raise ValueError(buttonName + " Button doesn't exist!!")
     else:
+        wait.until(EC.element_to_be_clickable((By.XPATH, ".//a[text()=\"" + buttonName + "\"]")))
         button.click()    
         time.sleep(5)
         driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.CONTROL + Keys.HOME)
@@ -419,6 +437,7 @@ def clickNextPageButton():
     try:
         buttonTab.find_element(By.XPATH, """.//li[@class="paginate_button next disabled"]""")
     except NoSuchElementException:
+        wait.until(EC.element_to_be_clickable((By.XPATH, """.//a[text()="Sonraki"]""")))
         buttonTab.find_element(By.XPATH, """.//a[text()="Sonraki"]""").click()
         time.sleep(5)
         driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.CONTROL + Keys.HOME)
