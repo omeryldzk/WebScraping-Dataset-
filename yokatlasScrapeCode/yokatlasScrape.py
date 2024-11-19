@@ -1,33 +1,33 @@
-from selenium import webdriver
 from scrapeFunctions import *
 
 
 #MAIN FUNCTION
 def main():
-    if type == "" or uniType == "" or startPage == "":
+    scrapeFunctions = ScrapeFunctions()
+    if scrapeFunctions.type == "" or scrapeFunctions.uniType == "" or scrapeFunctions.startPage == "":
         return
     #First we will select our program type option
-    selectOption(type)
+    scrapeFunctions.selectOption(scrapeFunctions.type)
     #We then decide numbers of elements in the table
-    selectOption("100")
+    scrapeFunctions.selectOption("100")
     #Then we decide the university type (private/government)
-    selectOption(uniType)
+    scrapeFunctions.selectOption(scrapeFunctions.uniType)
     time.sleep(3)
 
     #This function can be applied to use the navigator bar at the bottom and start from a certain page
-    for i in range(0,startPage-1):
-        clickNextPageButton()
+    for i in range(0,scrapeFunctions.startPage-1):
+        scrapeFunctions.clickNextPageButton()
     while True:
-        temp = driver.find_element(By.XPATH,"""//table[@id="mydata"]""")
+        temp = scrapeFunctions.driver.find_element(By.XPATH,"""//table[@id="mydata"]""")
         body = temp.find_element(By.XPATH,".//tbody")
         rows = body.find_elements(By.XPATH,".//tr")
         for row in rows:
-            original_window = enterDepartment(row)
-            scrapeDepartment(tempDict,writer,regionFile)
-            csvfile.flush()
-            exitDepartment(original_window)
+            original_window = scrapeFunctions.enterDepartment(row)
+            scrapeFunctions.scrapeDepartment()
+            scrapeFunctions.csvfile.flush()
+            scrapeFunctions.exitDepartment(original_window)
     
-        if clickNextPageButton() == 1:
+        if scrapeFunctions.clickNextPageButton() == 1:
             break
     return
      
