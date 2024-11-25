@@ -1,4 +1,9 @@
 Üniversite,Bölüm/Fakülte,Ücret,burs_oranı,Akademik yıl
+Sabancı Üniversitesi ,Bilgisayar Mühendisliği,1100000,0,2024
+Sabancı Üniversitesi ,Tıp,1100000,0,2024
+Bilkent Üniversitesi ,Bilgisayar Mühendisliği,550000,0,2024
+Koç Üniversitesi ,Bilgisayar Mühendisliği,1100000,0,2024
+Koç Üniversitesi ,Tıp,1250000,0,2024
 Acıbadem Üniversitesi ,Moleküler Biyoloji ve Genetik,400000,50,2024
 Acıbadem Üniversitesi ,Biyomedikal Mühendisliği,400000,50,2024
 Acıbadem Üniversitesi ,Bilgisayar Mühendisliği,450000,50,2024
@@ -37,26 +42,36 @@ Acıbadem Üniversitesi ,Tıbbi Laboratuvar Teknikleri,150000,50,2024
 Acıbadem Üniversitesi ,Aşçılık,150000,50,2024
 Acıbadem Üniversitesi ,Biyomedikal Cihaz Teknolojisi,150000,50,2024
 Acıbadem Üniversitesi ,Bilgisayar Programcılığı,150000,50,2024
-Ankara Medipol Üniversitesi ,Beslenme ve Diyetetik,68750,50,2024
-Ankara Medipol Üniversitesi ,Bilgisayar Mühendisliği,68750,50,2024
-Ankara Medipol Üniversitesi ,Diş Hekimliği,137500,50,2024
-Ankara Medipol Üniversitesi ,Ebelik,52250,50,2024
+Ankara Medipol Üniversitesi ,Beslenme ve Diyetetik,68750,50,2023
+Ankara Medipol Üniversitesi ,Bilgisayar Mühendisliği,68750,50,2023
+Ankara Medipol Üniversitesi ,Diş Hekimliği,137500,50,2023
+Ankara Medipol Üniversitesi ,Ebelik,52250,50,2023
+Ankara Medipol Üniversitesi ,Eczacılık,247500,50,2023
+Ankara Medipol Üniversitesi ,Elektrik,68750,50,2023
+Ankara Medipol Üniversitesi ,Hemşirelik,57200,50,2023
+Ankara Medipol Üniversitesi ,Hukuk,97200,0,2023
+Ankara Medipol Üniversitesi ,Tıp,137500,50,2023
+Ankara Medipol Üniversitesi ,Ön Lisans bölümleri,90450,50,2024
+Ankara Medipol Üniversitesi ,Beslenme ve Diyetetik,150000,50,2024
+Ankara Medipol Üniversitesi ,Bilgisayar Mühendisliği,125000,50,2024
+Ankara Medipol Üniversitesi ,Diş Hekimliği,260000,50,2024
+Ankara Medipol Üniversitesi ,Ebelik,102250,50,2024
 Ankara Medipol Üniversitesi ,Eczacılık,247500,50,2024
-Ankara Medipol Üniversitesi ,Elektrik,68750,50,2024
-Ankara Medipol Üniversitesi ,Hemşirelik,57200,50,2024
-Ankara Medipol Üniversitesi ,Hukuk,97200,0,2024
-Ankara Medipol Üniversitesi ,Tıp,137500,50,2024
-Ankara Medipol Üniversitesi ,Ön Lisans bölümleri,43450,50,2024
-Antalya Bilim Üniversitesi ,Beslenme ve Diyetetik,80000,50,2024
-Antalya Bilim Üniversitesi ,Bilgisayar Mühendisliği,80000,50,2024
-Antalya Bilim Üniversitesi ,Diş Hekimliği,265000,0,2024
-Antalya Bilim Üniversitesi ,Ebelik,80000,50,2024
-Antalya Bilim Üniversitesi ,Elektrik,80000,50,2024
-Antalya Bilim Üniversitesi ,Endüstri Mühendisliği,80000,50,2024
-Antalya Bilim Üniversitesi ,Fizyoterapi ve Rehabilitasyon,80000,50,2024
-Antalya Bilim Üniversitesi ,Hukuk,100000,50,2024
-Antalya Bilim Üniversitesi ,Psikoloji,135000,25,2024
-Antalya Bilim Üniversitesi ,Ağız ve Diş Sağlığı ve diğer önlisans bölümleri,60000,50,2024
+Ankara Medipol Üniversitesi ,Elektrik,128750,50,2024
+Ankara Medipol Üniversitesi ,Hemşirelik,107200,50,2024
+Ankara Medipol Üniversitesi ,Hukuk,270000,0,2024
+Ankara Medipol Üniversitesi ,Tıp,237500,50,2024
+Ankara Medipol Üniversitesi ,Ön Lisans bölümleri,83450,50,2024
+Antalya Bilim Üniversitesi ,Beslenme ve Diyetetik,80000,50,2023
+Antalya Bilim Üniversitesi ,Bilgisayar Mühendisliği,80000,50,2023
+Antalya Bilim Üniversitesi ,Diş Hekimliği,265000,0,2023
+Antalya Bilim Üniversitesi ,Ebelik,80000,50,2023
+Antalya Bilim Üniversitesi ,Elektrik,80000,50,2023
+Antalya Bilim Üniversitesi ,Endüstri Mühendisliği,80000,50,2023
+Antalya Bilim Üniversitesi ,Fizyoterapi ve Rehabilitasyon,80000,50,2023
+Antalya Bilim Üniversitesi ,Hukuk,100000,50,2023
+Antalya Bilim Üniversitesi ,Psikoloji,135000,25,2023
+Antalya Bilim Üniversitesi ,Ağız ve Diş Sağlığı ve diğer önlisans bölümleri,60000,50,2023
 Altınbaş Üniversitesi ,Ağız ve Diş Sağlığı,132000,50,2024
 Altınbaş Üniversitesi ,Ameliyathane Hizmetleri,132000,50,2024
 Altınbaş Üniversitesi ,Anestezi,198000,25,2024
@@ -239,27 +254,27 @@ Atılım Üniversitesi ,Tıbbi Görüntüleme Teknikleri:,195000,50,2024
 Atılım Üniversitesi ,Tıbbi Laboratuvar Teknikleri:,195000,50,2024
 Atılım Üniversitesi ,Mahkeme Büro Hizmetleri,195000,50,2024
 Atılım Üniversitesi ,E,195000,50,2024
-Atılım Üniversitesi ,Tıp Fakültesi,386000,25,2024
-Atılım Üniversitesi ,Tıp Fakültesi,289500,0,2024
-Atılım Üniversitesi ,Tıp Fakültesi,282000,25,2024
-Atılım Üniversitesi ,Tıp Fakültesi,211500,0,2024
-Atılım Üniversitesi ,Hukuk Fakültesi,141000,50,2024
-Atılım Üniversitesi ,İşletme Fakültesi,141000,50,2024
-Atılım Üniversitesi ,Sağlık Bilimleri Fakültesi,141000,50,2024
-Atılım Üniversitesi ,Mühendislik Fakültesi,211500,25,2024
-Atılım Üniversitesi ,Mühendislik Fakültesi,141000,50,2024
-Atılım Üniversitesi ,Adalet Meslek Yüksekokulu,110000,50,2024
-Atılım Üniversitesi ,Sağlık Hizmetleri Meslek Yüksekokulu,110000,50,2024
-Atılım Üniversitesi ,İngiliz Dili ve Edebiyatı,141000,50,2024
-Atılım Üniversitesi ,İngilizce Mütercimlik ve Tercümalık,211500,25,2024
-Atılım Üniversitesi ,Psikoloji,282000,25,2024
-Atılım Üniversitesi ,Psikoloji,211500,0,2024
-Atılım Üniversitesi ,"Endüstriyel Tasarım, Grafik Tasarımı, Mimarlık, Tekstil ve Moda",141000,50,2024
-Atılım Üniversitesi ,İç Mimarlık ve Çevre Tasarımı,211500,25,2024
-Atılım Üniversitesi ,Havacılık Yönetimi,211500,25,2024
-Atılım Üniversitesi ,Pilotaj,282000,0,2024
-Atılım Üniversitesi ,Uçak Elektrik ve Elektroniği,211500,25,2024
-Atılım Üniversitesi ,Uçak Gövde ve Motor Bakımı,211500,25,2024
+Atılım Üniversitesi ,Tıp Fakültesi,386000,25,2023
+Atılım Üniversitesi ,Tıp Fakültesi,289500,0,2023
+Atılım Üniversitesi ,Tıp Fakültesi,282000,25,2023
+Atılım Üniversitesi ,Tıp Fakültesi,211500,0,2023
+Atılım Üniversitesi ,Hukuk Fakültesi,141000,50,2023
+Atılım Üniversitesi ,İşletme Fakültesi,141000,50,2023
+Atılım Üniversitesi ,Sağlık Bilimleri Fakültesi,141000,50,2023
+Atılım Üniversitesi ,Mühendislik Fakültesi,211500,25,2023
+Atılım Üniversitesi ,Mühendislik Fakültesi,141000,50,2023
+Atılım Üniversitesi ,Adalet Meslek Yüksekokulu,110000,50,2023
+Atılım Üniversitesi ,Sağlık Hizmetleri Meslek Yüksekokulu,110000,50,2023
+Atılım Üniversitesi ,İngiliz Dili ve Edebiyatı,141000,50,2023
+Atılım Üniversitesi ,İngilizce Mütercimlik ve Tercümalık,211500,25,2023
+Atılım Üniversitesi ,Psikoloji,282000,25,2023
+Atılım Üniversitesi ,Psikoloji,211500,0,2023
+Atılım Üniversitesi ,"Endüstriyel Tasarım, Grafik Tasarımı, Mimarlık, Tekstil ve Moda",141000,50,2023
+Atılım Üniversitesi ,İç Mimarlık ve Çevre Tasarımı,211500,25,2023
+Atılım Üniversitesi ,Havacılık Yönetimi,211500,25,2023
+Atılım Üniversitesi ,Pilotaj,282000,0,2023
+Atılım Üniversitesi ,Uçak Elektrik ve Elektroniği,211500,25,2023
+Atılım Üniversitesi ,Uçak Gövde ve Motor Bakımı,211500,25,2023
 Başkent Üniversitesi ,Tıp Fakültesi,820000,0,2024
 Başkent Üniversitesi ,Diş Hekimliği Fakültesi,820000,0,2024
 Başkent Üniversitesi ,Eczacılık Fakültesi,710000,0,2024
@@ -313,73 +328,73 @@ Beykent Üniversitesi ,Bilgisayar Mühendisliği,364000,0,2024
 Beykent Üniversitesi ,Biyomedikal Mühendisliği  :,103030,50,2024
 Beykent Üniversitesi ,Elektrik,222666,0,2024
 Beykent Üniversitesi ,Endüstri Mühendisliği :,260000,50,2024
-Bezm,Tıp Fakültesi :,720000,50,2024
-Bezm,Tıp Fakültesi :,360000,0,2024
-Bezm,Diş Hekimliği Fakültesi :,700000,25,2024
-Bezm,Diş Hekimliği Fakültesi :,525000,0,2024
-Bezm,Eczacılık Fakültesi :,520000,25,2024
-Bezm,Eczacılık Fakültesi :,390000,0,2024
-Bezm,Beslenme ve Diyetetik Bölümü :,300000,50,2024
-Bezm,Beslenme ve Diyetetik Bölümü :,150000,0,2024
-Bezm,Fizyoterapi ve Rehabilitasyon Bölümü:,300000,50,2024
-Bezm,Fizyoterapi ve Rehabilitasyon Bölümü:,150000,0,2024
-Bezm,Hemşirelik Bölümü:,250000,50,2024
-Bezm,Hemşirelik Bölümü:,125000,0,2024
-Bezm,Odyoloji Bölümü:,288000,50,2024
-Bezm,Odyoloji Bölümü:,144000,0,2024
-Bezm,Sağlık Yönetimi Bölümü:,201600,50,2024
-Bezm,Sağlık Yönetimi Bölümü:,100800,0,2024
-Bezm,Ağız ve Diş Sağlığı :,180000,50,2024
-Bezm,Ağız ve Diş Sağlığı :,90000,0,2024
-Bezm,Ameliyathane Hizmetleri:,180000,50,2024
-Bezm,Ameliyathane Hizmetleri:,90000,0,2024
-Bezm,Anestezi:,180000,50,2024
-Bezm,Anestezi:,90000,0,2024
-Bezm,Eczane Hizmetleri:,180000,50,2024
-Bezm,Eczane Hizmetleri:,90000,0,2024
-Bezm,Elektronörofizyoloji:,180000,50,2024
-Bezm,Elektronörofizyoloji:,90000,0,2024
-Bezm,İlk ve Acil Yardım:,180000,50,2024
-Bezm,İlk ve Acil Yardım:,90000,0,2024
-Bezm,Optisyenlik:,180000,50,2024
-Bezm,Optisyenlik:,90000,0,2024
-Bezm,Ortopedik Protez ve Ortez:,180000,50,2024
-Bezm,Ortopedik Protez ve Ortez:,90000,0,2024
-Bezm,Patoloji Laboratuvar Teknikleri:,180000,50,2024
-Bezm,Patoloji Laboratuvar Teknikleri:,90000,0,2024
-Bezm,Radyoterapi:,180000,50,2024
-Bezm,Radyoterapi:,90000,0,2024
-Bezm,Tıbbi Dokümantasyon ve Sekreterlik:,180000,50,2024
-Bezm,Tıbbi Dokümantasyon ve Sekreterlik:,90000,0,2024
-Bezm,Tıbbi Görüntüleme Teknikleri:,180000,50,2024
-Bezm,Tıbbi Görüntüleme Teknikleri:,90000,0,2024
-Bezm,Tıbbi Laboratuar Teknikleri:,180000,50,2024
-Bezm,Tıbbi Laboratuar Teknikleri:,90000,0,2024
-Bezm,Yaşlı Bakımı:,180000,50,2024
-Bezm,Yaşlı Bakımı:,90000,0,2024
-Beykent Üniversitesi ,Endüstriyel Tasarım,238000,0,2024
-Beykent Üniversitesi ,İç Mimarlık :,296666,50,2024
-Beykent Üniversitesi ,İnşaat Mühendisliği,199333,0,2024
-Beykent Üniversitesi ,Kimya Mühendisliği,199333,0,2024
-Beykent Üniversitesi ,Makine Mühendisliği,199333,0,2024
-Beykent Üniversitesi ,Mimarlık,199333,0,2024
-Beykent Üniversitesi ,Yazılım Mühendisliği :,364000,50,2024
-Beykent Üniversitesi ,Beslenme ve Diyetetik :,276000,50,2024
-Beykent Üniversitesi ,Hemşirelik :,285333,50,2024
-Beykent Üniversitesi ,Çocuk Gelişimi,247333,0,2024
-Beykent Üniversitesi ,Fizyoterapi ve Rehabilitasyon :,266000,50,2024
-Beykent Üniversitesi ,Sağlık Yönetimi :,221333,50,2024
-Beykent Üniversitesi ,İlk ve Acil Yardım :,256000,0,2024
-Beykent Üniversitesi ,Anestezi :,172666,0,2024
-Beykent Üniversitesi ,Aşçılık :,172666,50,2024
-Beykent Üniversitesi ,Ameliyathane Hizmetleri :,174000,50,2024
-Beykent Üniversitesi ,"Dış Ticaret, Grafik Tasarımı :",159333,50,2024
-Beykent Üniversitesi ,Ağız ve Diş Sağlığı :,196000,50,2024
-Beykent Üniversitesi ,"Bankacılık ve Sigortacılık, Basım ve Yayım Teknolojileri, Çok Boyutlu Modelleme ve Animasyon, Eczane Hizmetleri, Elektrik, Halkla İlişkiler ve Tanıtım, İç Mekan Tasarımı, İnsan Kaynakları Yönetimi, İnşaat Teknolojisi, İş Sağlığı ve Güvenliği, İş Sağlığı ve Güvenliği, Lojistik, Makine, Mimari Restorasyon, Moda Tasarımı, Odyometri, Optisyenlik, Ortopedik Protez ve Ortez, Patoloji Laboratuvar Teknikleri, Radyo ve Televizyon Programcılığı, Radyoterapi, Sağlık Kurumları İşletmeciliği, Sosyal Hizmetler, Tekstil Teknolojisi, Tıbbi Dokümantasyon ve Sekreterlik, Turizm ve Seyahat Hizmetleri, Uygulamalı İngilizce Çevirmenlik Ücretleri :",151333,50,2024
-Beykent Üniversitesi ,"Bilgisayar Programcılığı, Sivil Havacılık Kabin Hizmetleri, Tıbbi Görüntüleme Teknikleri  :",202000,50,2024
-Beykent Üniversitesi ,"Çocuk Gelişimi, Diş Protez Teknolojisi, Diyaliz, Elektronörofizyoloji, Sivil Hava Ulaştırma İşletmeciliği  :",131333,50,2024
-Beykent Üniversitesi ,Fizyoterapi :,212970,50,2024
-Beykent Üniversitesi ,Tıbbi Laboratuvar Teknikleri :,187333,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Tıp Fakültesi :,720000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Tıp Fakültesi :,360000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Diş Hekimliği Fakültesi :,700000,25,2024
+Bezm-İ Alem Vakıf Üniversitesi,Diş Hekimliği Fakültesi :,525000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Eczacılık Fakültesi :,520000,25,2024
+Bezm-İ Alem Vakıf Üniversitesi,Eczacılık Fakültesi :,390000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Beslenme ve Diyetetik Bölümü :,300000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Beslenme ve Diyetetik Bölümü :,150000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Fizyoterapi ve Rehabilitasyon Bölümü:,300000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Fizyoterapi ve Rehabilitasyon Bölümü:,150000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Hemşirelik Bölümü:,250000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Hemşirelik Bölümü:,125000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Odyoloji Bölümü:,288000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Odyoloji Bölümü:,144000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Sağlık Yönetimi Bölümü:,201600,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Sağlık Yönetimi Bölümü:,100800,0,2024
+Bezm-İ Alem Vakıf Üniversitesizm,Ağız ve Diş Sağlığı :,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Ağız ve Diş Sağlığı :,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Ameliyathane Hizmetleri:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Ameliyathane Hizmetleri:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Anestezi:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Anestezi:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Eczane Hizmetleri:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Eczane Hizmetleri:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Elektronörofizyoloji:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Elektronörofizyoloji:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,İlk ve Acil Yardım:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,İlk ve Acil Yardım:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Optisyenlik:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Optisyenlik:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Ortopedik Protez ve Ortez:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Ortopedik Protez ve Ortez:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Patoloji Laboratuvar Teknikleri:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Patoloji Laboratuvar Teknikleri:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Radyoterapi:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Radyoterapi:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Tıbbi Dokümantasyon ve Sekreterlik:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Tıbbi Dokümantasyon ve Sekreterlik:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Tıbbi Görüntüleme Teknikleri:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Tıbbi Görüntüleme Teknikleri:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Tıbbi Laboratuar Teknikleri:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Tıbbi Laboratuar Teknikleri:,90000,0,2024
+Bezm-İ Alem Vakıf Üniversitesi,Yaşlı Bakımı:,180000,50,2024
+Bezm-İ Alem Vakıf Üniversitesi,Yaşlı Bakımı:,90000,0,2024
+Beykent Üniversitesi ,Endüstriyel Tasarım,238000,0,2023
+Beykent Üniversitesi ,İç Mimarlık :,296666,50,2023
+Beykent Üniversitesi ,İnşaat Mühendisliği,199333,0,2023
+Beykent Üniversitesi ,Kimya Mühendisliği,199333,0,2023
+Beykent Üniversitesi ,Makine Mühendisliği,199333,0,2023
+Beykent Üniversitesi ,Mimarlık,199333,0,2023
+Beykent Üniversitesi ,Yazılım Mühendisliği :,364000,50,2023
+Beykent Üniversitesi ,Beslenme ve Diyetetik :,276000,50,2023
+Beykent Üniversitesi ,Hemşirelik :,285333,50,2023
+Beykent Üniversitesi ,Çocuk Gelişimi,247333,0,2023
+Beykent Üniversitesi ,Fizyoterapi ve Rehabilitasyon :,266000,50,2023
+Beykent Üniversitesi ,Sağlık Yönetimi :,221333,50,2023
+Beykent Üniversitesi ,İlk ve Acil Yardım :,256000,0,2023
+Beykent Üniversitesi ,Anestezi :,172666,0,2023
+Beykent Üniversitesi ,Aşçılık :,172666,50,2023
+Beykent Üniversitesi ,Ameliyathane Hizmetleri :,174000,50,2023
+Beykent Üniversitesi ,"Dış Ticaret, Grafik Tasarımı :",159333,50,2023
+Beykent Üniversitesi ,Ağız ve Diş Sağlığı :,196000,50,2023
+Beykent Üniversitesi ,"Bankacılık ve Sigortacılık, Basım ve Yayım Teknolojileri, Çok Boyutlu Modelleme ve Animasyon, Eczane Hizmetleri, Elektrik, Halkla İlişkiler ve Tanıtım, İç Mekan Tasarımı, İnsan Kaynakları Yönetimi, İnşaat Teknolojisi, İş Sağlığı ve Güvenliği, İş Sağlığı ve Güvenliği, Lojistik, Makine, Mimari Restorasyon, Moda Tasarımı, Odyometri, Optisyenlik, Ortopedik Protez ve Ortez, Patoloji Laboratuvar Teknikleri, Radyo ve Televizyon Programcılığı, Radyoterapi, Sağlık Kurumları İşletmeciliği, Sosyal Hizmetler, Tekstil Teknolojisi, Tıbbi Dokümantasyon ve Sekreterlik, Turizm ve Seyahat Hizmetleri, Uygulamalı İngilizce Çevirmenlik Ücretleri :",151333,50,2023
+Beykent Üniversitesi ,"Bilgisayar Programcılığı, Sivil Havacılık Kabin Hizmetleri, Tıbbi Görüntüleme Teknikleri  :",202000,50,2023
+Beykent Üniversitesi ,"Çocuk Gelişimi, Diş Protez Teknolojisi, Diyaliz, Elektronörofizyoloji, Sivil Hava Ulaştırma İşletmeciliği  :",131333,50,2023
+Beykent Üniversitesi ,Fizyoterapi :,212970,50,2023
+Beykent Üniversitesi ,Tıbbi Laboratuvar Teknikleri :,187333,50,2023
 Beykoz Üniversitesi  ,İşletme Türkçe :,230000,50,2024
 Beykoz Üniversitesi  ,İşletme İngilizce:,230000,50,2024
 Beykoz Üniversitesi  ,Lojistik Yönetimi İngilizce:,230000,50,2024
@@ -450,23 +465,23 @@ Doğuş Üniversitesi ,Psikoloji,181818,0,2024
 Doğuş Üniversitesi ,Sosyoloji,103030,50,2024
 Doğuş Üniversitesi ,Türk Dili ve Edebiyatı,103030,50,2024
 Demiroğlu Bilim Üniversitesi ,Fen,141429,50,2024
-Demiroğlu Bilim Üniversitesi ,Fen,152896,0,2024
+Demiroğlu Bilim Üniversitesi ,Fen,252896,0,2024
 Demiroğlu Bilim Üniversitesi ,Fen,141429,50,2024
-Demiroğlu Bilim Üniversitesi ,Fen,152896,0,2024
+Demiroğlu Bilim Üniversitesi ,Fen,252896,0,2024
 Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Beslenme Ve Diyetetik Bölümü,118353,50,2024
-Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Beslenme Ve Diyetetik Bölümü,124582,0,2024
-Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Fizyoterapi Ve Rehabilitasyon Bölümü,115238,50,2024
-Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Fizyoterapi Ve Rehabilitasyon Bölümü,124582,0,2024
+Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Beslenme Ve Diyetetik Bölümü,224582,0,2024
+Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Fizyoterapi Ve Rehabilitasyon Bölümü,15238,50,2024
+Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Fizyoterapi Ve Rehabilitasyon Bölümü,224582,0,2024
 Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Ebelik Bölümü,96268,50,2024
-Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Ebelik Bölümü,89048,0,2024
+Demiroğlu Bilim Üniversitesi ,Sağlık Bilimleri Fakültesi Ebelik Bölümü,189048,0,2024
 Demiroğlu Bilim Üniversitesi ,Sağlık Yönetimi Bölümü,84942,50,2024
-Demiroğlu Bilim Üniversitesi ,Sağlık Yönetimi Bölümü,78571,0,2024
+Demiroğlu Bilim Üniversitesi ,Sağlık Yönetimi Bölümü,178571,0,2024
 Demiroğlu Bilim Üniversitesi ,Hemşirelik Yüksekokulu,104762,50,2024
-Demiroğlu Bilim Üniversitesi ,Hemşirelik Yüksekokulu,113256,0,2024
+Demiroğlu Bilim Üniversitesi ,Hemşirelik Yüksekokulu,213256,0,2024
 Demiroğlu Bilim Üniversitesi ,Hemşirelik Yüksekokulu,125715,50,2024
-Demiroğlu Bilim Üniversitesi ,Hemşirelik Yüksekokulu,135908,0,2024
+Demiroğlu Bilim Üniversitesi ,Hemşirelik Yüksekokulu,235908,0,2024
 Demiroğlu Bilim Üniversitesi ,Sağlık Hizmetleri Meslek Yüksekokulu,62857,50,2024
-Demiroğlu Bilim Üniversitesi ,Sağlık Hizmetleri Meslek Yüksekokulu,67954,0,2024
+Demiroğlu Bilim Üniversitesi ,Sağlık Hizmetleri Meslek Yüksekokulu,167954,0,2024
 Fatih Sultan Mehmet Vakıf Üniversitesi ,Hukuk,312000,50,2024
 Fatih Sultan Mehmet Vakıf Üniversitesi ,Hukuk,156000,0,2024
 Fatih Sultan Mehmet Vakıf Üniversitesi ,Okul Öncesi Öğretmenliği,320000,50,2024
@@ -514,32 +529,32 @@ Fatih Sultan Mehmet Vakıf Üniversitesi ,Sivil Havacılık Kabin Hizmetleri,165
 Fatih Sultan Mehmet Vakıf Üniversitesi ,Sivil Havacılık Kabin Hizmetleri,240000,25,2024
 Fatih Sultan Mehmet Vakıf Üniversitesi ,Sivil Havacılık Kabin Hizmetleri,180000,0,2024
 Doğuş Üniversitesi ,İngilizce Mütercim ve Tercümanlık,121212,50,2024
-Doğuş Üniversitesi ,İktisat,103030,50,2024
-Doğuş Üniversitesi ,İktisat,107879,50,2024
-Doğuş Üniversitesi ,İşletme,103030,50,2024
-Doğuş Üniversitesi ,İşletme,107879,50,2024
-Doğuş Üniversitesi ,Siyaset Bilimi ve Kamu Yönetimi,103030,50,2024
-Doğuş Üniversitesi ,Uluslararası İlişkiler,103030,50,2024
-Doğuş Üniversitesi ,Uluslararası Ticaret ve İşletmecilik,103030,50,2024
-Doğuş Üniversitesi ,Yönetim Bilişim Sistemleri,133333,50,2024
-Doğuş Üniversitesi ,Bilgisayar Mühendisliği,157576,50,2024
-Doğuş Üniversitesi ,Elektrik,87879,50,2024
-Doğuş Üniversitesi ,Endüstri Mühendisliği,115152,50,2024
-Doğuş Üniversitesi ,Endüstri Mühendisliği,121212,50,2024
-Doğuş Üniversitesi ,İnşaat Mühendisliği,87879,50,2024
-Doğuş Üniversitesi ,Makine Mühendisliği,87879,50,2024
-Doğuş Üniversitesi ,Makine Mühendisliği,95758,50,2024
-Doğuş Üniversitesi ,Yazılım Mühendisliği,157576,50,2024
-Doğuş Üniversitesi ,Endüstriyel Tasarım,103030,50,2024
-Doğuş Üniversitesi ,Gastronomi ve Mutfak Sanatları,121212,50,2024
-Doğuş Üniversitesi ,Görsel İletişim Tasarımı,103030,50,2024
-Doğuş Üniversitesi ,İç Mimarlık,109091,50,2024
-Doğuş Üniversitesi ,Mimarlık,87879,50,2024
-Doğuş Üniversitesi ,Dijital Oyun Tasarımı,127273,50,2024
-Doğuş Üniversitesi ,Grafik,96970,50,2024
-Doğuş Üniversitesi ,Grafik,96970,50,2024
-Doğuş Üniversitesi ,Tekstil ve Moda Tasarımı,90909,50,2024
-Doğuş Üniversitesi ,Oyunculuk,90909,50,2024
+Doğuş Üniversitesi ,İktisat,203030,50,2024
+Doğuş Üniversitesi ,İktisat,207879,50,2024
+Doğuş Üniversitesi ,İşletme,203030,50,2024
+Doğuş Üniversitesi ,İşletme,207879,50,2024
+Doğuş Üniversitesi ,Siyaset Bilimi ve Kamu Yönetimi,203030,50,2024
+Doğuş Üniversitesi ,Uluslararası İlişkiler,203030,50,2024
+Doğuş Üniversitesi ,Uluslararası Ticaret ve İşletmecilik,203030,50,2024
+Doğuş Üniversitesi ,Yönetim Bilişim Sistemleri,233333,50,2024
+Doğuş Üniversitesi ,Bilgisayar Mühendisliği,257576,50,2024
+Doğuş Üniversitesi ,Elektrik,187879,50,2024
+Doğuş Üniversitesi ,Endüstri Mühendisliği,215152,50,2024
+Doğuş Üniversitesi ,Endüstri Mühendisliği,221212,50,2024
+Doğuş Üniversitesi ,İnşaat Mühendisliği,187879,50,2024
+Doğuş Üniversitesi ,Makine Mühendisliği,187879,50,2024
+Doğuş Üniversitesi ,Makine Mühendisliği,195758,50,2024
+Doğuş Üniversitesi ,Yazılım Mühendisliği,257576,50,2024
+Doğuş Üniversitesi ,Endüstriyel Tasarım,203030,50,2024
+Doğuş Üniversitesi ,Gastronomi ve Mutfak Sanatları,221212,50,2024
+Doğuş Üniversitesi ,Görsel İletişim Tasarımı,203030,50,2024
+Doğuş Üniversitesi ,İç Mimarlık,209091,50,2024
+Doğuş Üniversitesi ,Mimarlık,187879,50,2024
+Doğuş Üniversitesi ,Dijital Oyun Tasarımı,227273,50,2024
+Doğuş Üniversitesi ,Grafik,16970,50,2024
+Doğuş Üniversitesi ,Grafik,196970,50,2024
+Doğuş Üniversitesi ,Tekstil ve Moda Tasarımı,190909,50,2024
+Doğuş Üniversitesi ,Oyunculuk,190909,50,2024
 Hasan Kalyoncu Üniversitesi ,Hukuk Fakültesi:,350000,0,2024
 Hasan Kalyoncu Üniversitesi ,Eğitim Fakültesi Ücretleri,250000,0,2024
 Hasan Kalyoncu Üniversitesi ,Güzel Sanatlar ve Mimarlık Fakültesi Ücretleri,250000,0,2024
@@ -550,7 +565,7 @@ Hasan Kalyoncu Üniversitesi ,Sosyal Bilimler Fakültesi Ücretleri :,250000,0,2
 Hasan Kalyoncu Üniversitesi ,Meslek Yüksekokul Ücretleri,150000,0,2024
 Hasan Kalyoncu Üniversitesi ,Yabancı Diller Yüksekokulu Ücretleri,250000,0,2024
 Haliç Üniversitesi ,Halkla İlişkiler ve Tanıtım,213000,25,2024
-Haliç Üniversitesi ,Halkla İlişkiler ve Tanıtım,284000,25,2024
+Haliç Üniversitesi ,Halkla İlişkiler ve Tanıtım,284000,0,2024
 Haliç Üniversitesi ,Gastronomi ve Mutfak Sanatları,270000,25,2024
 Haliç Üniversitesi ,Gastronomi ve Mutfak Sanatları,360000,25,2024
 Haliç Üniversitesi ,Türk Dili ve Edebiyatı,142000,50,2024
@@ -1448,7 +1463,7 @@ Işık Üniversitesi , Burs ve İndirim:,95720,50,2024
 İstanbul Medipol Üniversitesi ,"Anestezi, Ağız ve Diş Sağılığı, Ameliyathane Hizmetleri, Biyomedikal Cihaz Teknolojisi, Çocuk Gelişimi, Diş Protez Teknolojisi, Diyaliz, Elektronörofizyoloji, Fizyoterapi, İlk ve Acil Yardım, İş Sağlığı ve Güvenliği, Odyometri, Optisyenlik, Radyoterapi, Sağlık Kurumları İşletmeciliği, Sivil Hava Ulaştırma İşletmeciliği, Tıbbi Dokümantasyon ve Sekreterlik, Tıbbi Görüntüleme Teknikleri, Tıbbi Laboratuvar Teknikleri, Eczane Hizmetleri, Patoloji Laboratuvar Teknikleri",86900,0,2024
 İstanbul Medipol Üniversitesi ,Uygulamalı İngilizce ve Çevirmenlik :,74800,0,2024
 İstanbul Medipol Üniversitesi ,"Mimari Restorasyon, Bilgisayar Programcılığı, İç Mekan Tasarımı, İnşaat Teknolojisi",86900,0,2024
-İstanbul Yeni Yüzyıl Üniversitesi , İndirimli:,300000,25,2024
+İstanbul Yeni Yüzyıl Üniversitesi , Tıp Fakültesi :,300000,25,2024
 İstanbul Yeni Yüzyıl Üniversitesi , İndirimli:,300000,25,2024
 İstanbul Yeni Yüzyıl Üniversitesi , İndirimli:,270000,25,2024
 İstanbul Yeni Yüzyıl Üniversitesi , İndirimli:,130000,25,2024
@@ -2257,59 +2272,59 @@ Doğu Akdeniz Üniversitesi  ,Sağlık Yönetimi,131240,50,2024
 Doğu Akdeniz Üniversitesi  ,Gastronomi ve Mutfak Sanatları,155836,50,2024
 Doğu Akdeniz Üniversitesi  ,Turizm İşletmeciliği,140386,50,2024
 Doğu Akdeniz Üniversitesi  ,Dijital Oyun Tasarımı,140386,50,2024
-Girne Üniversitesi  ,Diş Hekimliği,62250,25,2024
-Girne Üniversitesi  ,Diş Hekimliği,62250,25,2024
-Girne Üniversitesi  ,Tıp Türkçe:,57750,25,2024
-Girne Üniversitesi  ,Tıp İngilizce:,57750,25,2024
-Girne Üniversitesi  ,Deniz İşletmeciliği ve Yönetimi Fakültesi,131000,50,2024
-Girne Üniversitesi  ,Deniz İşletmeciliği ve Yönetimi Fakültesi,65500,0,2024
-Girne Üniversitesi  ,Denizcilik Fakültesi,131000,50,2024
-Girne Üniversitesi  ,Denizcilik Fakültesi,65500,0,2024
-Girne Üniversitesi  ,Diş Hekimliği Fakültesi,229550,25,2024
-Girne Üniversitesi  ,Diş Hekimliği Fakültesi,172163,0,2024
-Girne Üniversitesi  ,Eğitim Fakültesi,131000,50,2024
-Girne Üniversitesi  ,Eğitim Fakültesi,65500,0,2024
-Girne Üniversitesi  ,Fen Edebiyat Fakültesi,131000,50,2024
-Girne Üniversitesi  ,Fen Edebiyat Fakültesi,65500,0,2024
-Girne Üniversitesi  ,Hukuk Fakültesi,135700,50,2024
-Girne Üniversitesi  ,Hukuk Fakültesi,67850,0,2024
-Girne Üniversitesi  ,İktisadi ve İdari Bilimler Fakültesi,131000,50,2024
-Girne Üniversitesi  ,İktisadi ve İdari Bilimler Fakültesi,65500,0,2024
-Girne Üniversitesi  ,Mimarlık Fakültesi,131000,50,2024
-Girne Üniversitesi  ,Mimarlık Fakültesi,65500,0,2024
-Girne Üniversitesi  ,Mühendislik Fakültesi,131000,50,2024
-Girne Üniversitesi  ,Mühendislik Fakültesi,65500,0,2024
-Girne Üniversitesi  ,Eczacılık Fakültesi,184600,0,2024
-Girne Üniversitesi  ,Tıp Fakültesi,266450,25,2024
-Girne Üniversitesi  ,Tıp Fakültesi,199838,0,2024
-Girne Üniversitesi  ,Turizm Fakültesi,131000,50,2024
-Girne Üniversitesi  ,Turizm Fakültesi,65500,0,2024
-Girne Üniversitesi  ,Sağlık Hizmetleri Meslek Yüksekokulu,124000,50,2024
-Girne Üniversitesi  ,Sağlık Hizmetleri Meslek Yüksekokulu,62000,0,2024
-Girne Üniversitesi  ,Turizm ve Otelcilik Meslek Yüksekokulu,124000,50,2024
-Girne Üniversitesi  ,Turizm ve Otelcilik Meslek Yüksekokulu,62000,0,2024
-Girne Üniversitesi  ,Denizcilik Meslek Yüksekokulu,124000,50,2024
-Girne Üniversitesi  ,Denizcilik Meslek Yüksekokulu,62000,0,2024
-Girne Üniversitesi  ,Yabancı Diller Meslek Yüksekokulu,124000,50,2024
-Girne Üniversitesi  ,Yabancı Diller Meslek Yüksekokulu,62000,0,2024
-Girne Üniversitesi  ,Teknik Bilimler Meslek Yüksekokulu,124000,50,2024
-Girne Üniversitesi  ,Teknik Bilimler Meslek Yüksekokulu,62000,0,2024
-Girne Üniversitesi  ,Adalet Meslek Yüksekokulu,124000,50,2024
-Girne Üniversitesi  ,Adalet Meslek Yüksekokulu,62000,0,2024
-Girne Üniversitesi  ,Yabancı Diller Yüksekokulu,155200,50,2024
-Girne Üniversitesi  ,Yabancı Diller Yüksekokulu,77600,0,2024
-Girne Üniversitesi  ,Uçak Mühendisliği,155200,50,2024
-Girne Üniversitesi  ,Uçak Mühendisliği,77600,0,2024
-Girne Üniversitesi  ,Pilotaj,208200,25,2024
-Girne Üniversitesi  ,Pilotaj,156150,0,2024
-Girne Üniversitesi  ,Havacılık Yönetimi,131000,50,2024
-Girne Üniversitesi  ,Havacılık Yönetimi,65500,0,2024
-Girne Üniversitesi  ,Fizyoterapi ve Rehabilitasyon,209600,50,2024
-Girne Üniversitesi  ,Fizyoterapi ve Rehabilitasyon,104800,0,2024
-Girne Üniversitesi  ,Hemşirelik,124000,50,2024
-Girne Üniversitesi  ,Hemşirelik,62000,0,2024
-Girne Üniversitesi  ,Beslenme ve Diyetetik,209600,50,2024
-Girne Üniversitesi  ,Beslenme ve Diyetetik,104800,0,2024
+Girne Üniversitesi  ,Diş Hekimliği,62250,25,2023
+Girne Üniversitesi  ,Diş Hekimliği,62250,25,2023
+Girne Üniversitesi  ,Tıp Türkçe:,57750,25,2023
+Girne Üniversitesi  ,Tıp İngilizce:,57750,25,2023
+Girne Üniversitesi  ,Deniz İşletmeciliği ve Yönetimi Fakültesi,131000,50,2023
+Girne Üniversitesi  ,Deniz İşletmeciliği ve Yönetimi Fakültesi,65500,0,2023
+Girne Üniversitesi  ,Denizcilik Fakültesi,131000,50,2023
+Girne Üniversitesi  ,Denizcilik Fakültesi,65500,0,2023
+Girne Üniversitesi  ,Diş Hekimliği Fakültesi,229550,25,2023
+Girne Üniversitesi  ,Diş Hekimliği Fakültesi,172163,0,2023
+Girne Üniversitesi  ,Eğitim Fakültesi,131000,50,2023
+Girne Üniversitesi  ,Eğitim Fakültesi,65500,0,2023
+Girne Üniversitesi  ,Fen Edebiyat Fakültesi,131000,50,2023
+Girne Üniversitesi  ,Fen Edebiyat Fakültesi,65500,0,2023
+Girne Üniversitesi  ,Hukuk Fakültesi,135700,50,2023
+Girne Üniversitesi  ,Hukuk Fakültesi,67850,0,2023
+Girne Üniversitesi  ,İktisadi ve İdari Bilimler Fakültesi,131000,50,2023
+Girne Üniversitesi  ,İktisadi ve İdari Bilimler Fakültesi,65500,0,2023
+Girne Üniversitesi  ,Mimarlık Fakültesi,131000,50,2023
+Girne Üniversitesi  ,Mimarlık Fakültesi,65500,0,2023
+Girne Üniversitesi  ,Mühendislik Fakültesi,131000,50,2023
+Girne Üniversitesi  ,Mühendislik Fakültesi,65500,0,2023
+Girne Üniversitesi  ,Eczacılık Fakültesi,184600,0,2023
+Girne Üniversitesi  ,Tıp Fakültesi,266450,25,2023
+Girne Üniversitesi  ,Tıp Fakültesi,199838,0,2023
+Girne Üniversitesi  ,Turizm Fakültesi,131000,50,2023
+Girne Üniversitesi  ,Turizm Fakültesi,65500,0,2023
+Girne Üniversitesi  ,Sağlık Hizmetleri Meslek Yüksekokulu,124000,50,2023
+Girne Üniversitesi  ,Sağlık Hizmetleri Meslek Yüksekokulu,62000,0,2023
+Girne Üniversitesi  ,Turizm ve Otelcilik Meslek Yüksekokulu,124000,50,2023
+Girne Üniversitesi  ,Turizm ve Otelcilik Meslek Yüksekokulu,62000,0,2023
+Girne Üniversitesi  ,Denizcilik Meslek Yüksekokulu,124000,50,2023
+Girne Üniversitesi  ,Denizcilik Meslek Yüksekokulu,62000,0,2023
+Girne Üniversitesi  ,Yabancı Diller Meslek Yüksekokulu,124000,50,2023
+Girne Üniversitesi  ,Yabancı Diller Meslek Yüksekokulu,62000,0,2023
+Girne Üniversitesi  ,Teknik Bilimler Meslek Yüksekokulu,124000,50,2023
+Girne Üniversitesi  ,Teknik Bilimler Meslek Yüksekokulu,62000,0,2023
+Girne Üniversitesi  ,Adalet Meslek Yüksekokulu,124000,50,2023
+Girne Üniversitesi  ,Adalet Meslek Yüksekokulu,62000,0,2023
+Girne Üniversitesi  ,Yabancı Diller Yüksekokulu,155200,50,2023
+Girne Üniversitesi  ,Yabancı Diller Yüksekokulu,77600,0,2023
+Girne Üniversitesi  ,Uçak Mühendisliği,155200,50,2023
+Girne Üniversitesi  ,Uçak Mühendisliği,77600,0,2023
+Girne Üniversitesi  ,Pilotaj,208200,25,2023
+Girne Üniversitesi  ,Pilotaj,156150,0,2023
+Girne Üniversitesi  ,Havacılık Yönetimi,131000,50,2023
+Girne Üniversitesi  ,Havacılık Yönetimi,65500,0,2023
+Girne Üniversitesi  ,Fizyoterapi ve Rehabilitasyon,209600,50,2023
+Girne Üniversitesi  ,Fizyoterapi ve Rehabilitasyon,104800,0,2023
+Girne Üniversitesi  ,Hemşirelik,124000,50,2023
+Girne Üniversitesi  ,Hemşirelik,62000,0,2023
+Girne Üniversitesi  ,Beslenme ve Diyetetik,209600,50,2023
+Girne Üniversitesi  ,Beslenme ve Diyetetik,104800,0,2023
 Toros Üniversitesi ,Mühendislik Fakültesi,313500,0,2024
 Toros Üniversitesi ,"Güzel Sanatlar, Tasarım ve Mimarlık Fakültesi",313500,0,2024
 Toros Üniversitesi ,Sağlık Bilimleri Fakültesi,313500,0,2024

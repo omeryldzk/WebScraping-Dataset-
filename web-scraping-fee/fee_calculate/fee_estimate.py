@@ -3,8 +3,8 @@ from fuzzywuzzy import fuzz, process
 import warnings
 
 # Load data
-yok_df = pd.read_csv("yök.csv")
-fee_df = pd.read_csv("modified_fee.csv")
+yok_df = pd.read_csv("updated_data.csv")
+fee_df = pd.read_csv("fee_updated.csv")
 
 # Convert the 'Ücret' column to numeric, handling non-numeric values
 fee_df['Ücret'] = pd.to_numeric(fee_df['Ücret'], errors='coerce')
@@ -12,12 +12,12 @@ fee_df = fee_df.dropna(subset=['Ücret'])  # Remove rows with NaN in 'Ücret'
 
 # Define inflation rates
 inflation_rates = {
-    2020: 2,
-    2021: 2.5,
-    2022: 2.5,
-    2023: 2.4,
-    2024: 2.3,
-    2025: 1.7,
+    2020: 1.3,
+    2021: 1.8,
+    2022: 2.1,
+    2023: 2,
+    2024: 1.9,
+    2025: 2,
 }
 
 # Adjust fee based on inflation
@@ -33,9 +33,12 @@ def adjust_fee(base_fee, base_year, target_year):
     return base_fee * adjustment_factor
 
 # Update fuzzy_match function to use token-based matching
-def fuzzy_match(value, choices, threshold=80):
-    match, score = process.extractOne(value, choices, scorer=fuzz.token_set_ratio)
-    return match if score >= threshold else None
+def fuzzy_match(value, choices, threshold=70):
+    result = process.extractOne(value, choices, scorer=fuzz.token_set_ratio)
+    if result:
+        match, score = result
+        return match if score >= threshold else None
+    return None
 
 # Adjust fee based on scholarship difference
 def adjust_for_scholarship(base_fee, base_scholarship, target_scholarship):
@@ -65,15 +68,13 @@ def find_best_fee(yok_row):
     scholarship = yok_row['scholarshipRate']
     year = yok_row['academicYear']
     
+    if(yok_row['universityType'] == "Devlet" or yok_row['universityType'] == "devlet"):
+        return 0
     # If the scholarship is 100%, set fee to 0
     if scholarship == 100:
         return 0
     # Find closest university name in fee.csv
     uni_match = fuzzy_match(uni, fee_df['Üniversite'].unique())
-    if not uni_match:
-        # If no university match, use the average fee for the year
-        year_avg_fee = calculate_yearly_average_fee(year)
-        return year_avg_fee
     
     # Attempt matches with both department and faculty names
     dept_or_faculty_matches = [dept, faculty]
@@ -81,17 +82,17 @@ def find_best_fee(yok_row):
     for name_option in dept_or_faculty_matches:
         name_match = fuzzy_match(name_option, fee_df[fee_df['Üniversite'] == uni_match]['Bölüm/Fakülte'].unique())
         
-        # Step 1: Exact match on department/faculty and year, ignoring scholarship initially
-        exact_match = fee_df[
-            (fee_df['Üniversite'] == uni_match) &
-            (fee_df['Bölüm/Fakülte'] == name_match) &
-            (fee_df['Akademik yıl'] == year)
-        ]
-        if not exact_match.empty:
-            found_fee = exact_match['Ücret'].iloc[0]
-            found_scholarship = exact_match['burs_oranı'].iloc[0]
-            return adjust_for_scholarship(found_fee, found_scholarship, scholarship)
-    
+    # Step 1: Exact match on department/faculty and year, ignoring scholarship initially
+    exact_match = fee_df[
+        (fee_df['Üniversite'] == uni_match) &
+        (fee_df['Bölüm/Fakülte'] == name_match) &
+        (fee_df['Akademik yıl'] == year)
+    ]
+    if not exact_match.empty:
+        found_fee = exact_match['Ücret'].iloc[0]
+        found_scholarship = exact_match['burs_oranı'].iloc[0]
+        return adjust_for_scholarship(found_fee, found_scholarship, scholarship)
+
     # Step 2: Check other departments/faculties within the same year
     other_dept_same_year = fee_df[
         (fee_df['Üniversite'] == uni_match) &
@@ -103,19 +104,18 @@ def find_best_fee(yok_row):
         return adjust_for_scholarship(found_fee, found_scholarship, scholarship)
     
     # Step 3: Check the same department/faculty in other years
-    for name_option in dept_or_faculty_matches:
-        name_match = fuzzy_match(name_option, fee_df[fee_df['Üniversite'] == uni_match]['Bölüm/Fakülte'].unique())
-        same_dept_other_years = fee_df[
-            (fee_df['Üniversite'] == uni_match) &
-            (fee_df['Bölüm/Fakülte'] == name_match)
-        ]
-        if not same_dept_other_years.empty:
-            closest_year = same_dept_other_years['Akademik yıl'].iloc[0]
-            closest_fee = same_dept_other_years['Ücret'].iloc[0]
-            closest_scholarship = same_dept_other_years['burs_oranı'].iloc[0]
-            adjusted_fee = adjust_fee(closest_fee, closest_year, year)
-            return adjust_for_scholarship(adjusted_fee, closest_scholarship, scholarship)
+    same_dept_other_years = fee_df[
+        (fee_df['Üniversite'] == uni_match) &
+        (fee_df['Bölüm/Fakülte'] == name_match)
+    ]
     
+    if not same_dept_other_years.empty:
+        closest_year = same_dept_other_years['Akademik yıl'].iloc[0]
+        closest_fee = same_dept_other_years['Ücret'].iloc[0]
+        closest_scholarship = same_dept_other_years['burs_oranı'].iloc[0]
+        adjusted_fee = adjust_fee(closest_fee, closest_year, year)
+        return adjust_for_scholarship(adjusted_fee, closest_scholarship, scholarship)
+
     # Step 4: Search other departments/faculties in other years
     other_dept_other_years = fee_df[
         (fee_df['Üniversite'] == uni_match)
@@ -145,6 +145,5 @@ def find_best_fee(yok_row):
 
 # Apply function to each row in yök.csv
 yok_df['Estimated Fee'] = yok_df.apply(find_best_fee, axis=1)
-
 # Save the updated yök data with estimated fees
 yok_df.to_csv("yök_with_fees.csv", index=False)
