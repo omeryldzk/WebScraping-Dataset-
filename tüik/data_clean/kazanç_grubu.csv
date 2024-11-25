@@ -1,8 +1,4 @@
-"Lisans mezunlarının bölümlere göre aylık ortalama kazanç grupları, 2022-2023",,,
-"Monthly average earning groups of bachelor's degree graduates by programmes, 2022-2023",,,
-,(Kazanç grubu - Earning group),,
-"Bölüm
-Programme",2022 (r),,2023
+Program,2022,2023
 "Pilotaj
 Flight training",.,,"Çok yüksek
 Very high"
@@ -865,9 +861,4 @@ Very high",,.
 "Moda tasarımı öğretmenliği
 Fashion design teaching","Düşük
 Low",,.
-"TÜİK, Yükseköğretim İstihdam Göstergeleri, 2023",,,
-"TurkStat, Higher Education Employment Indicators, 2023",,,
-(r) Revize edilmiştir.,,,
-(r) Data revised.,,,
-. Medyan (ortanca) değerin altında mezunu olan bölümlere tablolarda yer verilmemiştir.,,,
-. Departments with number of graduates below the median value were not included in the tables.,,,
+
