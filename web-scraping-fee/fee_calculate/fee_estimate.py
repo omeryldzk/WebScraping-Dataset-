@@ -99,8 +99,8 @@ def find_best_fee(yok_row):
         (fee_df['Akademik yıl'] == year)
     ]
     if not other_dept_same_year.empty:
-        found_fee = other_dept_same_year['Ücret'].iloc[0]
-        found_scholarship = other_dept_same_year['burs_oranı'].iloc[0]
+        found_fee = other_dept_same_year['Ücret'].median()
+        found_scholarship = other_dept_same_year['burs_oranı'].median()
         return adjust_for_scholarship(found_fee, found_scholarship, scholarship)
     
     # Step 3: Check the same department/faculty in other years
@@ -115,8 +115,20 @@ def find_best_fee(yok_row):
         closest_scholarship = same_dept_other_years['burs_oranı'].iloc[0]
         adjusted_fee = adjust_fee(closest_fee, closest_year, year)
         return adjust_for_scholarship(adjusted_fee, closest_scholarship, scholarship)
-
-    # Step 4: Search other departments/faculties in other years
+    
+    # Step 4: Fallback to similar department/faculty at other universities if no match found
+    similar_dept = fuzzy_match(dept, fee_df['Bölüm/Fakülte'].unique())
+    if similar_dept:
+        dept_match_same_year = fee_df[
+            (fee_df['Bölüm/Fakülte'] == similar_dept) &
+            (fee_df['Akademik yıl'] == year)
+        ]
+        if not dept_match_same_year.empty:
+            found_fee = dept_match_same_year['Ücret'].median()
+            found_scholarship = dept_match_same_year['burs_oranı'].median()
+            return adjust_for_scholarship(found_fee, found_scholarship, scholarship)
+    
+    # Step 5: Search other departments/faculties in other years
     other_dept_other_years = fee_df[
         (fee_df['Üniversite'] == uni_match)
     ]
@@ -127,18 +139,7 @@ def find_best_fee(yok_row):
         adjusted_fee = adjust_fee(closest_fee, closest_year, year)
         return adjust_for_scholarship(adjusted_fee, closest_scholarship, scholarship)
     
-    # # Step 5: Fallback to similar department/faculty at other universities if no match found
-    # similar_dept = fuzzy_match(dept, fee_df['Bölüm/Fakülte'].unique())
-    # if similar_dept:
-    #     dept_match_same_year = fee_df[
-    #         (fee_df['Bölüm/Fakülte'] == similar_dept) &
-    #         (fee_df['Akademik yıl'] == year)
-    #     ]
-    #     if not dept_match_same_year.empty:
-    #         found_fee = dept_match_same_year['Ücret'].iloc[0]
-    #         found_scholarship = dept_match_same_year['burs_oranı'].iloc[0]
-    #         return adjust_for_scholarship(found_fee, found_scholarship, scholarship)
-    
+   
     # If all else fails, use the average fee for the year
     year_avg_fee = calculate_yearly_average_fee(year)
     return year_avg_fee
