@@ -1,0 +1,16 @@
+genel problemler:
+outofregion'da hiç kendi bölgesinden gelmediyse boş kalmış ama %0 yazmalı
+2022 için top9 pref sayıdan yüzdeye
+
+devlet üni problems:
+dil, departman ismi, fakülte ismi problemi
+kktc problemi
+
+departments söz ve say ve dil vakıf departman, fakülte ve dil açısından tamam
+departments ea vakıf UOLP problemi
+
+
+TÜM AYDIN VE BALIKESİR BÖLGE VERİLERİ TÜM VERİLER BİR ARAYA GETİRİLİP DÜZELTİLECEK
+
+HOCAYA SOR:
+KKTC,UOLP,SUNY,

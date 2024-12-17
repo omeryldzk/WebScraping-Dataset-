@@ -1,0 +1,4 @@
+-Hiç öğrencisi olmayan bölümlerin baseRanking,topRanking,avgAdmissionRanking(TYT),baseAdmissionRanking(TYT) satırları boş
+-Bazı 2021lerin avgAdmissionRanking(TYT) verileri eksik onları rescrape edemedim
+-Bazı outOfCityStudentRate ve sameRegionStudentRate değerleri boş onda da yökatlasın gelen kişinin yer verisine sahip olmadığı durum
+-Bazı currentStudentCount boş direkt veri olmadığından
