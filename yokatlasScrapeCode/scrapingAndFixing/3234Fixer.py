@@ -12,7 +12,7 @@ fileToFix = input("Enter the file name: ")
 file = open(fileToFix, "r", encoding="utf-8")
 csvreaderFileToFix = csv.reader(file)
 
-fixedFileName = fileToFix.replace(".csv", "") + "(fixed1)" + ".csv"
+fixedFileName = fileToFix.replace(".csv", "") + "(fixed2)" + ".csv"
 newFile = open(fixedFileName, "w", newline="", encoding="utf-8")
 csvwriter = csv.writer(newFile)
 
@@ -32,9 +32,10 @@ for department in csvreaderFileToFix:
         count += 1
         continue
     else:
-        if department[20] == "0":
-            department[20] = ""
-            
+        if department[32] != "":
+            department[32] = str(department[32]).replace(",", ".")
+        if department[34] != "":
+            department[34] = str(department[34]).replace(",", ".")
                                 
 
     csvwriter.writerow(department)
