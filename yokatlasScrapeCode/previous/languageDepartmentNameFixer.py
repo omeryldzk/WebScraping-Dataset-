@@ -3,7 +3,6 @@ import csv
 from numba.core.cgutils import false_bit
 
 fileToFix = input("Enter the file name: ")
-fileToFix = "..\\"+ fileToFix
 file = open(fileToFix, "r", encoding="utf-8")
 csvreaderFileToFix = csv.reader(file)
 
@@ -11,7 +10,7 @@ fixedFileName = fileToFix.replace(".csv", "") + "(fixed3)" + ".csv"
 newFile = open(fixedFileName, "w", newline="")
 csvwriter = csv.writer(newFile)
 
-lang_file = open("..\\languages.csv", "r", encoding="utf-8")
+lang_file = open("languages.csv", "r", encoding="utf-8")
 csvreaderLanguages = csv.reader(lang_file)
 
 count = 0

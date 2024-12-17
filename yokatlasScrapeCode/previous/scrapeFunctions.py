@@ -379,8 +379,8 @@ class ScrapeFunctions:
         if self.driver.current_url == "https://yokatlas.yok.gov.tr/lisans-anasayfa.php" or self.driver.current_url == "https://yokatlas.yok.gov.tr/2022/lisans-anasayfa.php" or self.driver.current_url == "https://yokatlas.yok.gov.tr/2021/lisans-anasayfa.php":
             return
         self.closePopUp()
-        year = 2023
-        for i in range(0, 3):
+        year = 2024
+        for i in range(0, 1):
             if self.driver.current_url == "https://yokatlas.yok.gov.tr/lisans-anasayfa.php" or self.driver.current_url == "https://yokatlas.yok.gov.tr/2022/lisans-anasayfa.php" or self.driver.current_url == "https://yokatlas.yok.gov.tr/2021/lisans-anasayfa.php":
                 break
 
@@ -437,9 +437,11 @@ class ScrapeFunctions:
             self.writer.writerow(self.tempDict)
             for a in self.featurenames:
                 self.tempDict[a] = None
+            
+            break
 
-            if self.clickYear(year - i - 1) == 1:
-                break
+            # if self.clickYear(year - i - 1) == 1:
+            #     break
         return
 
 
