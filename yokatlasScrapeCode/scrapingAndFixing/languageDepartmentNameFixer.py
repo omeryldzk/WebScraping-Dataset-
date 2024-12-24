@@ -7,7 +7,7 @@ file = open(fileToFix, "r", encoding="utf-8")
 csvreaderFileToFix = csv.reader(file)
 
 fixedFileName = fileToFix.replace(".csv", "") + "(fixed3)" + ".csv"
-newFile = open(fixedFileName, "w", newline="")
+newFile = open(fixedFileName, "w", newline="", encoding="utf-8")
 csvwriter = csv.writer(newFile)
 
 lang_file = open("languages.csv", "r", encoding="utf-8")
