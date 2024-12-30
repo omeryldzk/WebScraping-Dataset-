@@ -1,0 +1,511 @@
+{
+    "Universities": {
+        "ALANYA HAMDULLAH EM\u0130N PA\u015eA \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": "19.000 TL ile 27.980 TL aras\u0131nda. Haz\u0131rl\u0131k s\u0131n\u0131f\u0131 26.400 TL."
+        },
+        "ANTALYA B\u0130L\u0130M \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Di\u015f Hekimli\u011fi": "58.000 TL",
+                "Lisans Programlar\u0131": "39.000 TL ile 49.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "30.000 TL.",
+                "\u0130ngilizce Haz\u0131rl\u0131k": "36.000 TL.",
+                "Pilotaj": "48.000 TL + 54.000 Euro u\u00e7u\u015f \u00fccreti."
+            }
+        },
+        "AVRASYA \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "20.000 TL ile 30.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "12.000 TL ile 17.000 TL aras\u0131nda."
+            }
+        },
+        "ANTALYA AKEV \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "40.000 TL.",
+                "\u00d6n Lisans Programlar\u0131": "20.000 TL."
+            }
+        },
+        "ANKARA MED\u0130POL \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "30.000 TL ile 36.500 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "23.250 TL."
+            }
+        },
+        "ALTINBA\u015e \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "87.450 TL",
+                "Di\u015f Hekimli\u011fi": "57.550 TL",
+                "Di\u011fer Lisans Programlar\u0131": "50.550 TL ile 57.550 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "23.000 TL."
+            }
+        },
+        "ATILIM \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "65.000 TL",
+                "Lisans Programlar\u0131": "43.600 TL",
+                "Meslek Y\u00fcksekokulu": "38.400 TL."
+            }
+        },
+        "ACIBADEM MEHMET AL\u0130 AYDINLAR \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "120.000 TL",
+                "Lisans Programlar\u0131": "34.800 TL ile 70.000 TL aras\u0131nda.",
+                "Y\u00fcksekokul Programlar\u0131": "33.800 TL."
+            }
+        },
+        "BEYKENT \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi ve Di\u015f Hekimli\u011fi": "90.750 TL",
+                "Lisans Programlar\u0131": "41.250 TL ile 46.750 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "18.150 TL ile 26.650 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "34.925 TL."
+            }
+        },
+        "BEYKOZ \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "30.000 TL ile 50.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "20.000 TL ile 28.000 TL aras\u0131nda."
+            }
+        },
+        "BEZM\u0130ALEM VAKIF \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "80.000 TL",
+                "Di\u015f Hekimli\u011fi Fak\u00fcltesi": "75.000 TL",
+                "Lisans Programlar\u0131": "32.000 TL ile 66.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "25.000 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "48.000 TL."
+            }
+        },
+        "BAH\u00c7E\u015eEH\u0130R \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Di\u015f Hekimli\u011fi ve T\u0131p Fak\u00fcltesi": "91.500 TL",
+                "Lisans Programlar\u0131": "60.400 TL ile 56.900 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "33.000 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "57.950 TL."
+            }
+        },
+        "BA\u015eKENT \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p ve Di\u015f Hekimli\u011fi": "64.000 TL",
+                "Lisans Programlar\u0131": "42.000 TL ile 48.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "24.000 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "35.000 TL."
+            }
+        },
+        "B\u0130LKENT \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u00fcm Programlar": "45.000 TL."
+            }
+        },
+        "B\u0130R\u00dcN\u0130 \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi ve Di\u015f Hekimli\u011fi": "86.111 TL",
+                "Lisans Programlar\u0131": "27.778 TL ile 59.074 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "22.222 TL ile 33.333 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "50.926 TL."
+            }
+        },
+        "\u00c7A\u011e \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "28.657.41 TL.",
+                "\u00d6n Lisans Programlar\u0131": "14.328.71 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "28.657.41 TL."
+            }
+        },
+        "\u00c7ANKAYA \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u00fcm Programlar": "43.900 TL."
+            }
+        },
+        "DEM\u0130RO\u011eLU B\u0130L\u0130M \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "99.016.67 TL",
+                "Lisans Programlar\u0131": "41.083.33 TL ile 27.966.67 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "18.241.67 TL."
+            }
+        },
+        "DO\u011eU\u015e \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "36.300 TL ile 41.250 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "17.875 TL ile 20.075 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "36.300 TL."
+            }
+        },
+        "FENERBAH\u00c7E \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "46.250 TL ile 54.750 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "50.000 TL."
+            }
+        },
+        "FAT\u0130H SULTAN MEHMET VAKIF \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "20.300 TL ile 44.100 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "20.400 TL ile 23.200 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": {
+                    "\u0130ngilizce": "34.800 TL",
+                    "Arap\u00e7a": "18.600 TL."
+                }
+            }
+        },
+        "HASAN KALYONCU \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "29.000 TL ile 40.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "18.000 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "29.000 TL."
+            }
+        },
+        "HAL\u0130\u00c7 \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "75.900 TL",
+                "Lisans Programlar\u0131": "31.000 TL ile 37.950 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "27.600 TL ile 34.500 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "32.200 TL."
+            }
+        },
+        "I\u015eIK \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "24.000 TL ile 55.000 TL aras\u0131nda.",
+                "\u0130ktisadi ve \u0130dari Bilimler Fak\u00fcltesi": "53.000 TL.",
+                "Meslek Y\u00fcksekokullar\u0131": "24.800 TL."
+            }
+        },
+        "\u0130BN HALDUN \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "50.000 TL ile 55.000 TL aras\u0131nda.",
+                "Tam Burs": "T\u00fcm \u00f6\u011frenciler."
+            }
+        },
+        "\u0130ZM\u0130R EKONOM\u0130 \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "60.300 TL.",
+                "Di\u011fer Lisans Programlar\u0131": "43.100 TL ile 45.700 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "18.100 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "43.100 TL."
+            }
+        },
+        "\u0130STANBUL K\u00dcLT\u00dcR \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "48.000 TL ile 52.250 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "25.500 TL ile 27.500 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "48.000 TL."
+            }
+        },
+        "\u0130STANBUL AYDIN \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi ve Di\u015f Hekimli\u011fi": "75.900 TL.",
+                "Lisans Programlar\u0131": "39.000 TL ile 54.000 TL aras\u0131nda.",
+                "Y\u00fcksekokul \u00dccretleri": "17.250 TL ile 34.500 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "34.500 TL."
+            }
+        },
+        "\u0130STANBUL B\u0130LG\u0130 \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "49.305.56 TL ile 61.712.96 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "41.481.48 TL ile 43.657.41 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "56.805.56 TL."
+            }
+        },
+        "\u0130STANBUL SABAHATT\u0130N ZA\u0130M \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "38.000 TL.",
+                "Yabanc\u0131 Dil Haz\u0131rl\u0131k S\u0131n\u0131flar\u0131": "35.000 TL."
+            }
+        },
+        "\u0130STANBUL YEN\u0130 Y\u00dcZYIL \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "53.280 TL.",
+                "Di\u015f Hekimli\u011fi": "53.280 TL.",
+                "Di\u011fer Lisans Programlar\u0131": "30.580 TL ile 42.200 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "18.600 TL ile 26.640 TL aras\u0131nda."
+            }
+        },
+        "\u0130STANBUL RUMEL\u0130 \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "42.000 TL.",
+                "Sa\u011fl\u0131k Meslek Y\u00fcksekokulu Programlar\u0131": "36.000 TL.",
+                "\u00d6n Lisans Programlar\u0131": "24.000 TL ile 26.000 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "16.000 TL."
+            }
+        },
+        "\u0130STANBUL GED\u0130K \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "39.900 TL ile 45.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "25.000 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "32.800 TL."
+            }
+        },
+        "\u0130STANBUL 29 MAYIS \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "24.500 TL ile 31.000 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "25.500 TL."
+            }
+        },
+        "\u0130STANBUL \u015eEH\u0130R \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "43.500 TL ile 48.900 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "23.900 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "43.500 TL."
+            }
+        },
+        "\u0130STANBUL MED\u0130POL \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Uluslararas\u0131 T\u0131p Fak\u00fcltesi": "84.000 TL.",
+                "T\u0131p Fak\u00fcltesi": "76.000 TL.",
+                "Di\u015f Hekimli\u011fi": "76.000 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "50.000 TL.",
+                "Lisans Programlar\u0131": "27.500 TL ile 69.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "21.500 TL ile 27.000 TL aras\u0131nda."
+            }
+        },
+        "\u0130STANBUL OKAN \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "85.278 TL.",
+                "Di\u015f Hekimli\u011fi": "80.398 TL.",
+                "Lisans Programlar\u0131": "41.800 TL ile 60.512 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "27.450 TL ile 29.280 TL aras\u0131nda.",
+                "Pilotaj": "55.998 TL + 13.000 Euro u\u00e7u\u015f e\u011fitimi."
+            }
+        },
+        "\u0130STANBUL GEL\u0130\u015e\u0130M \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "36.000 TL ile 40.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "22.000 TL."
+            }
+        },
+        "\u0130STANBUL ESENYURT \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "31.100 TL ile 35.640 TL aras\u0131nda.",
+                "Y\u00fcksekokul \u00dccretleri": "17.000 TL ile 31.100 TL aras\u0131nda."
+            }
+        },
+        "\u0130STANBUL T\u0130CARET \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "42.000 TL ile 44.300 TL aras\u0131nda."
+            }
+        },
+        "\u0130STANBUL AREL \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "36.900 TL ile 45.900 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "19.900 TL ile 27.900 TL aras\u0131nda."
+            }
+        },
+        "\u0130STANBUL KENT \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Di\u015f Hekimli\u011fi": "80.000 TL.",
+                "Di\u011fer Lisans Programlar\u0131": "40.018 TL ile 49.018 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "24.248 TL ile 30.000 TL aras\u0131nda."
+            }
+        },
+        "\u0130ST\u0130NYE \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "89.000 TL.",
+                "Lisans Programlar\u0131": "28.000 TL ile 75.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "16.000 TL ile 41.000 TL aras\u0131nda."
+            }
+        },
+        "KO\u00c7 \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "133.000 TL.",
+                "Lisans Programlar\u0131": "96.500 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "96.500 TL."
+            }
+        },
+        "KAD\u0130R HAS \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u00fcm Lisans Programlar\u0131": "62.500 TL."
+            }
+        },
+        "KONYA GIDA VE TARIM \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "27.500 TL ile 29.000 TL aras\u0131nda."
+            }
+        },
+        "KTO KARATAY \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "60.000 TL.",
+                "Lisans Programlar\u0131": "28.500 TL ile 42.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "18.000 TL ile 20.000 TL aras\u0131nda.",
+                "Pilotaj": "42.000 TL + 52.000 Euro u\u00e7u\u015f e\u011fitimi.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "29.500 TL."
+            }
+        },
+        "KAPADOKYA \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "22.250 TL ile 31.500 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "14.700 TL ile 21.500 TL aras\u0131nda."
+            }
+        },
+        "LOKMAN HEK\u0130M \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "78.000 TL.",
+                "Lisans Programlar\u0131": "25.600 TL ile 60.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "24.000 TL."
+            }
+        },
+        "MALTEPE \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "66.700 TL.",
+                "Lisans Programlar\u0131": "34.900 TL ile 48.900 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "21.900 TL ile 27.800 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "39.300 TL."
+            }
+        },
+        "MEF \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "54.520 TL ile 64.960 TL aras\u0131nda."
+            }
+        },
+        "NUH NAC\u0130 YAZGAN \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "27.000 TL ile 30.500 TL."
+            }
+        },
+        "OST\u0130M TEKN\u0130K \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "45.000 TL.",
+                "\u00d6n Lisans Programlar\u0131": "25.000 TL."
+            }
+        },
+        "\u00d6ZYE\u011e\u0130N \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "72.000 TL ile 46.000 TL aras\u0131nda.",
+                "Pilotaj Program\u0131": "57.600 TL + 50.000 Euro u\u00e7u\u015f e\u011fitimi."
+            }
+        },
+        "P\u0130R\u0130 RE\u0130S \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "48.000 TL ile 55.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Program\u0131": "30.000 TL."
+            }
+        },
+        "RECEP TAYY\u0130P ERDO\u011eAN \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Ba\u015far\u0131 Bursu": "1500 TL ile 500 TL."
+            }
+        },
+        "SABANCI \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u00fcm Lisans Programlar\u0131": "87.000 TL."
+            }
+        },
+        "SANKO \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "66.000 TL.",
+                "Lisans Programlar\u0131": "25.500 TL ile 28.500 TL aras\u0131nda."
+            }
+        },
+        "TED \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "38.500 TL."
+            }
+        },
+        "T\u00dcRK HAVA KURUMU \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "32.500 TL ile 35.000 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "20.500 TL.",
+                "Pilot": "70.000 ABD dolar\u0131.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "32.500 TL."
+            }
+        },
+        "TOROS \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Lisans Programlar\u0131": "34.560 TL.",
+                "\u00d6n Lisans Programlar\u0131": "16.821 TL."
+            }
+        },
+        "UFUK \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "59.283 TL.",
+                "Di\u011fer Programlar": "40.420 TL.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "40.420 TL."
+            }
+        },
+        "\u00dcSK\u00dcDAR \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "87.500 TL.",
+                "Lisans Programlar\u0131": "33.981 TL ile 45.185 TL aras\u0131nda.",
+                "\u00d6n Lisans Programlar\u0131": "22.565 TL.",
+                "\u0130ngilizce Haz\u0131rl\u0131k": "37.639 TL."
+            }
+        },
+        "YA\u015eAR \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u00fcm Fak\u00fclteler": "42.500 TL.",
+                "Y\u00fcksekokul \u00dccretleri": "21.750 TL ile 42.500 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "42.500 TL."
+            }
+        },
+        "YED\u0130TEPE \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "Di\u015f Hekimli\u011fi Fak\u00fcltesi": "85.000 TL.",
+                "T\u0131p Fak\u00fcltesi": "78.000 TL.",
+                "Lisans Programlar\u0131": "35.000 TL ile 65.000 TL aras\u0131nda.",
+                "Y\u00fcksekokul \u00dccretleri": "25.000 TL ile 28.500 TL aras\u0131nda.",
+                "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "22.500 TL."
+            }
+        },
+        "Y\u00dcKSEK \u0130HT\u0130SAS \u00dcN\u0130VERS\u0130TES\u0130": {
+            "Fees": {
+                "T\u0131p Fak\u00fcltesi": "62.000 TL.",
+                "Lisans Programlar\u0131": "29.000 TL ile 35.000 TL aras\u0131nda.",
+                "Y\u00fcksekokul \u00dccretleri": "20.000 TL."
+            }
+        },
+        "KKTC \u00dcN\u0130VERS\u0130TELER\u0130": {
+            "Fees": {
+                "ODT\u00dc KUZEY KIBRIS KAMPUSU": "37.590 TL.",
+                "\u0130T\u00dc KIBRIS KAMPUSU": "25.000 TL.",
+                "ADA KENT \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "Di\u015f Hekimli\u011fi": "52.000 TL.",
+                    "Di\u011fer": "17.000 TL ile 28.000 TL aras\u0131nda.",
+                    "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "15.000 TL."
+                },
+                "YAKIN DO\u011eU \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "T\u0131p Fak\u00fcltesi": "75.500 TL.",
+                    "Di\u015f Hekimli\u011fi": "62.000 TL.",
+                    "Lisans Programlar\u0131": "32.400 TL ile 56.000 TL aras\u0131nda.",
+                    "Y\u00fcksekokul \u00dccretleri": "30.600 TL ile 32.400 TL aras\u0131nda.",
+                    "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "30.000 TL."
+                },
+                "ULUSLARARASI KIBRIS \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "Lisans Programlar\u0131": "27.000 TL ile 40.800 TL aras\u0131nda.",
+                    "\u00d6n Lisans Programlar\u0131": "24.600 TL.",
+                    "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "27.000 TL."
+                },
+                "KIBRIS AMER\u0130KAN \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "Lisans Programlar\u0131": "16.000 TL ile 24.000 TL aras\u0131nda.",
+                    "\u0130ngilizce Haz\u0131rl\u0131k": "16.000 TL.",
+                    "\u00d6n Lisans Programlar\u0131": "14.000 TL ile 15.000 TL aras\u0131nda."
+                },
+                "LEFKE AVRUPA \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "Lisans Programlar\u0131": "21.700 TL ile 46.700 TL aras\u0131nda.",
+                    "\u00d6n Lisans Programlar\u0131": "20.700 TL.",
+                    "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "24.700 TL."
+                },
+                "G\u0130RNE AMER\u0130KAN \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "Lisans Programlar\u0131": "23.000 TL ile 39.960 TL aras\u0131nda.",
+                    "Y\u00fcksekokul Programlar\u0131": "21.600 TL ile 24.000 TL aras\u0131nda.",
+                    "Pilotaj": "36.000 TL.",
+                    "Haz\u0131rl\u0131k S\u0131n\u0131f\u0131": "23.000 TL."
+                },
+                "DO\u011eU AKDEN\u0130Z \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "T\u0131p Fak\u00fcltesi ve Di\u015f Hekimli\u011fi": "53.880 TL.",
+                    "Lisans Programlar\u0131": "21.250 TL ile 35.410 TL aras\u0131nda.",
+                    "\u00d6n Lisans Programlar\u0131": "20.020 TL."
+                },
+                "G\u0130RNE \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "T\u0131p Fak\u00fcltesi": "75.500 TL.",
+                    "Di\u015f Hekimli\u011fi": "62.000 TL.",
+                    "Lisans Programlar\u0131": "32.400 TL ile 41.300 TL.",
+                    "Hem\u015firelik Program\u0131 ve Meslek Y\u00fcksekokulu Programlar\u0131": "30.600 TL."
+                },
+                "KIBRIS \u0130L\u0130M \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "Lisans Programlar\u0131": "15.000 TL ile 27.600 TL aras\u0131nda.",
+                    "\u00d6n Lisans Programlar\u0131": "9.000 TL ile 15.000 TL aras\u0131nda."
+                },
+                "ULUSLARARASI F\u0130NAL \u00dcN\u0130VERS\u0130TES\u0130": {
+                    "Lisans Programlar\u0131": "22.000 TL ile 29.400 TL aras\u0131nda."
+                }
+            }
+        }
+    }
+}

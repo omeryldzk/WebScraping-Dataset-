@@ -1,0 +1,511 @@
+{
+    "Universities": {
+        "ALANYA HAMDULLAH EMİN PAŞA ÜNİVERSİTESİ": {
+            "Fees": "19.000 TL ile 27.980 TL arasında. Hazırlık sınıfı 26.400 TL."
+        },
+        "ANTALYA BİLİM ÜNİVERSİTESİ": {
+            "Fees": {
+                "Diş Hekimliği": "58.000 TL",
+                "Lisans Programları": "39.000 TL ile 49.000 TL arasında.",
+                "Ön Lisans Programları": "30.000 TL.",
+                "İngilizce Hazırlık": "36.000 TL.",
+                "Pilotaj": "48.000 TL + 54.000 Euro uçuş ücreti."
+            }
+        },
+        "AVRASYA ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "20.000 TL ile 30.000 TL arasında.",
+                "Ön Lisans Programları": "12.000 TL ile 17.000 TL arasında."
+            }
+        },
+        "ANTALYA AKEV ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "40.000 TL.",
+                "Ön Lisans Programları": "20.000 TL."
+            }
+        },
+        "ANKARA MEDİPOL ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "30.000 TL ile 36.500 TL arasında.",
+                "Ön Lisans Programları": "23.250 TL."
+            }
+        },
+        "ALTINBAŞ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "87.450 TL",
+                "Diş Hekimliği": "57.550 TL",
+                "Diğer Lisans Programları": "50.550 TL ile 57.550 TL arasında.",
+                "Ön Lisans Programları": "23.000 TL."
+            }
+        },
+        "ATILIM ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "65.000 TL",
+                "Lisans Programları": "43.600 TL",
+                "Meslek Yüksekokulu": "38.400 TL."
+            }
+        },
+        "ACIBADEM MEHMET ALİ AYDINLAR ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "120.000 TL",
+                "Lisans Programları": "34.800 TL ile 70.000 TL arasında.",
+                "Yüksekokul Programları": "33.800 TL."
+            }
+        },
+        "BEYKENT ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi ve Diş Hekimliği": "90.750 TL",
+                "Lisans Programları": "41.250 TL ile 46.750 TL arasında.",
+                "Ön Lisans Programları": "18.150 TL ile 26.650 TL arasında.",
+                "Hazırlık Sınıfı": "34.925 TL."
+            }
+        },
+        "BEYKOZ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "30.000 TL ile 50.000 TL arasında.",
+                "Ön Lisans Programları": "20.000 TL ile 28.000 TL arasında."
+            }
+        },
+        "BEZMİALEM VAKIF ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "80.000 TL",
+                "Diş Hekimliği Fakültesi": "75.000 TL",
+                "Lisans Programları": "32.000 TL ile 66.000 TL arasında.",
+                "Ön Lisans Programları": "25.000 TL.",
+                "Hazırlık Sınıfı": "48.000 TL."
+            }
+        },
+        "BAHÇEŞEHİR ÜNİVERSİTESİ": {
+            "Fees": {
+                "Diş Hekimliği ve Tıp Fakültesi": "91.500 TL",
+                "Lisans Programları": "60.400 TL ile 56.900 TL arasında.",
+                "Ön Lisans Programları": "33.000 TL.",
+                "Hazırlık Sınıfı": "57.950 TL."
+            }
+        },
+        "BAŞKENT ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp ve Diş Hekimliği": "64.000 TL",
+                "Lisans Programları": "42.000 TL ile 48.000 TL arasında.",
+                "Ön Lisans Programları": "24.000 TL.",
+                "Hazırlık Sınıfı": "35.000 TL."
+            }
+        },
+        "BİLKENT ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tüm Programlar": "45.000 TL."
+            }
+        },
+        "BİRÜNİ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi ve Diş Hekimliği": "86.111 TL",
+                "Lisans Programları": "27.778 TL ile 59.074 TL arasında.",
+                "Ön Lisans Programları": "22.222 TL ile 33.333 TL arasında.",
+                "Hazırlık Sınıfı": "50.926 TL."
+            }
+        },
+        "ÇAĞ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "28.657.41 TL.",
+                "Ön Lisans Programları": "14.328.71 TL.",
+                "Hazırlık Sınıfı": "28.657.41 TL."
+            }
+        },
+        "ÇANKAYA ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tüm Programlar": "43.900 TL."
+            }
+        },
+        "DEMİROĞLU BİLİM ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "99.016.67 TL",
+                "Lisans Programları": "41.083.33 TL ile 27.966.67 TL arasında.",
+                "Ön Lisans Programları": "18.241.67 TL."
+            }
+        },
+        "DOĞUŞ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "36.300 TL ile 41.250 TL arasında.",
+                "Ön Lisans Programları": "17.875 TL ile 20.075 TL arasında.",
+                "Hazırlık Sınıfı": "36.300 TL."
+            }
+        },
+        "FENERBAHÇE ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "46.250 TL ile 54.750 TL arasında.",
+                "Hazırlık Sınıfı": "50.000 TL."
+            }
+        },
+        "FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "20.300 TL ile 44.100 TL arasında.",
+                "Ön Lisans Programları": "20.400 TL ile 23.200 TL arasında.",
+                "Hazırlık Sınıfı": {
+                    "İngilizce": "34.800 TL",
+                    "Arapça": "18.600 TL."
+                }
+            }
+        },
+        "HASAN KALYONCU ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "29.000 TL ile 40.000 TL arasında.",
+                "Ön Lisans Programları": "18.000 TL.",
+                "Hazırlık Sınıfı": "29.000 TL."
+            }
+        },
+        "HALİÇ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "75.900 TL",
+                "Lisans Programları": "31.000 TL ile 37.950 TL arasında.",
+                "Ön Lisans Programları": "27.600 TL ile 34.500 TL arasında.",
+                "Hazırlık Sınıfı": "32.200 TL."
+            }
+        },
+        "IŞIK ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "24.000 TL ile 55.000 TL arasında.",
+                "İktisadi ve İdari Bilimler Fakültesi": "53.000 TL.",
+                "Meslek Yüksekokulları": "24.800 TL."
+            }
+        },
+        "İBN HALDUN ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "50.000 TL ile 55.000 TL arasında.",
+                "Tam Burs": "Tüm öğrenciler."
+            }
+        },
+        "İZMİR EKONOMİ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "60.300 TL.",
+                "Diğer Lisans Programları": "43.100 TL ile 45.700 TL arasında.",
+                "Ön Lisans Programları": "18.100 TL.",
+                "Hazırlık Sınıfı": "43.100 TL."
+            }
+        },
+        "İSTANBUL KÜLTÜR ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "48.000 TL ile 52.250 TL arasında.",
+                "Ön Lisans Programları": "25.500 TL ile 27.500 TL arasında.",
+                "Hazırlık Sınıfı": "48.000 TL."
+            }
+        },
+        "İSTANBUL AYDIN ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi ve Diş Hekimliği": "75.900 TL.",
+                "Lisans Programları": "39.000 TL ile 54.000 TL arasında.",
+                "Yüksekokul Ücretleri": "17.250 TL ile 34.500 TL arasında.",
+                "Hazırlık Sınıfı": "34.500 TL."
+            }
+        },
+        "İSTANBUL BİLGİ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "49.305.56 TL ile 61.712.96 TL arasında.",
+                "Ön Lisans Programları": "41.481.48 TL ile 43.657.41 TL arasında.",
+                "Hazırlık Sınıfı": "56.805.56 TL."
+            }
+        },
+        "İSTANBUL SABAHATTİN ZAİM ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "38.000 TL.",
+                "Yabancı Dil Hazırlık Sınıfları": "35.000 TL."
+            }
+        },
+        "İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "53.280 TL.",
+                "Diş Hekimliği": "53.280 TL.",
+                "Diğer Lisans Programları": "30.580 TL ile 42.200 TL arasında.",
+                "Ön Lisans Programları": "18.600 TL ile 26.640 TL arasında."
+            }
+        },
+        "İSTANBUL RUMELİ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "42.000 TL.",
+                "Sağlık Meslek Yüksekokulu Programları": "36.000 TL.",
+                "Ön Lisans Programları": "24.000 TL ile 26.000 TL arasında.",
+                "Hazırlık Sınıfı": "16.000 TL."
+            }
+        },
+        "İSTANBUL GEDİK ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "39.900 TL ile 45.000 TL arasında.",
+                "Ön Lisans Programları": "25.000 TL.",
+                "Hazırlık Sınıfı": "32.800 TL."
+            }
+        },
+        "İSTANBUL 29 MAYIS ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "24.500 TL ile 31.000 TL arasında.",
+                "Hazırlık Sınıfı": "25.500 TL."
+            }
+        },
+        "İSTANBUL ŞEHİR ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "43.500 TL ile 48.900 TL arasında.",
+                "Ön Lisans Programları": "23.900 TL.",
+                "Hazırlık Sınıfı": "43.500 TL."
+            }
+        },
+        "İSTANBUL MEDİPOL ÜNİVERSİTESİ": {
+            "Fees": {
+                "Uluslararası Tıp Fakültesi": "84.000 TL.",
+                "Tıp Fakültesi": "76.000 TL.",
+                "Diş Hekimliği": "76.000 TL.",
+                "Hazırlık Sınıfı": "50.000 TL.",
+                "Lisans Programları": "27.500 TL ile 69.000 TL arasında.",
+                "Ön Lisans Programları": "21.500 TL ile 27.000 TL arasında."
+            }
+        },
+        "İSTANBUL OKAN ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "85.278 TL.",
+                "Diş Hekimliği": "80.398 TL.",
+                "Lisans Programları": "41.800 TL ile 60.512 TL arasında.",
+                "Ön Lisans Programları": "27.450 TL ile 29.280 TL arasında.",
+                "Pilotaj": "55.998 TL + 13.000 Euro uçuş eğitimi."
+            }
+        },
+        "İSTANBUL GELİŞİM ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "36.000 TL ile 40.000 TL arasında.",
+                "Ön Lisans Programları": "22.000 TL."
+            }
+        },
+        "İSTANBUL ESENYURT ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "31.100 TL ile 35.640 TL arasında.",
+                "Yüksekokul Ücretleri": "17.000 TL ile 31.100 TL arasında."
+            }
+        },
+        "İSTANBUL TİCARET ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "42.000 TL ile 44.300 TL arasında."
+            }
+        },
+        "İSTANBUL AREL ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "36.900 TL ile 45.900 TL arasında.",
+                "Ön Lisans Programları": "19.900 TL ile 27.900 TL arasında."
+            }
+        },
+        "İSTANBUL KENT ÜNİVERSİTESİ": {
+            "Fees": {
+                "Diş Hekimliği": "80.000 TL.",
+                "Diğer Lisans Programları": "40.018 TL ile 49.018 TL arasında.",
+                "Ön Lisans Programları": "24.248 TL ile 30.000 TL arasında."
+            }
+        },
+        "İSTİNYE ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "89.000 TL.",
+                "Lisans Programları": "28.000 TL ile 75.000 TL arasında.",
+                "Ön Lisans Programları": "16.000 TL ile 41.000 TL arasında."
+            }
+        },
+        "KOÇ ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "133.000 TL.",
+                "Lisans Programları": "96.500 TL.",
+                "Hazırlık Sınıfı": "96.500 TL."
+            }
+        },
+        "KADİR HAS ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tüm Lisans Programları": "62.500 TL."
+            }
+        },
+        "KONYA GIDA VE TARIM ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "27.500 TL ile 29.000 TL arasında."
+            }
+        },
+        "KTO KARATAY ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "60.000 TL.",
+                "Lisans Programları": "28.500 TL ile 42.000 TL arasında.",
+                "Ön Lisans Programları": "18.000 TL ile 20.000 TL arasında.",
+                "Pilotaj": "42.000 TL + 52.000 Euro uçuş eğitimi.",
+                "Hazırlık Sınıfı": "29.500 TL."
+            }
+        },
+        "KAPADOKYA ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "22.250 TL ile 31.500 TL arasında.",
+                "Ön Lisans Programları": "14.700 TL ile 21.500 TL arasında."
+            }
+        },
+        "LOKMAN HEKİM ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "78.000 TL.",
+                "Lisans Programları": "25.600 TL ile 60.000 TL arasında.",
+                "Ön Lisans Programları": "24.000 TL."
+            }
+        },
+        "MALTEPE ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "66.700 TL.",
+                "Lisans Programları": "34.900 TL ile 48.900 TL arasında.",
+                "Ön Lisans Programları": "21.900 TL ile 27.800 TL arasında.",
+                "Hazırlık Sınıfı": "39.300 TL."
+            }
+        },
+        "MEF ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "54.520 TL ile 64.960 TL arasında."
+            }
+        },
+        "NUH NACİ YAZGAN ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "27.000 TL ile 30.500 TL."
+            }
+        },
+        "OSTİM TEKNİK ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "45.000 TL.",
+                "Ön Lisans Programları": "25.000 TL."
+            }
+        },
+        "ÖZYEĞİN ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "72.000 TL ile 46.000 TL arasında.",
+                "Pilotaj Programı": "57.600 TL + 50.000 Euro uçuş eğitimi."
+            }
+        },
+        "PİRİ REİS ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "48.000 TL ile 55.000 TL arasında.",
+                "Ön Lisans Programı": "30.000 TL."
+            }
+        },
+        "RECEP TAYYİP ERDOĞAN ÜNİVERSİTESİ": {
+            "Fees": {
+                "Başarı Bursu": "1500 TL ile 500 TL."
+            }
+        },
+        "SABANCI ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tüm Lisans Programları": "87.000 TL."
+            }
+        },
+        "SANKO ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "66.000 TL.",
+                "Lisans Programları": "25.500 TL ile 28.500 TL arasında."
+            }
+        },
+        "TED ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "38.500 TL."
+            }
+        },
+        "TÜRK HAVA KURUMU ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "32.500 TL ile 35.000 TL arasında.",
+                "Ön Lisans Programları": "20.500 TL.",
+                "Pilot": "70.000 ABD doları.",
+                "Hazırlık Sınıfı": "32.500 TL."
+            }
+        },
+        "TOROS ÜNİVERSİTESİ": {
+            "Fees": {
+                "Lisans Programları": "34.560 TL.",
+                "Ön Lisans Programları": "16.821 TL."
+            }
+        },
+        "UFUK ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "59.283 TL.",
+                "Diğer Programlar": "40.420 TL.",
+                "Hazırlık Sınıfı": "40.420 TL."
+            }
+        },
+        "ÜSKÜDAR ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "87.500 TL.",
+                "Lisans Programları": "33.981 TL ile 45.185 TL arasında.",
+                "Ön Lisans Programları": "22.565 TL.",
+                "İngilizce Hazırlık": "37.639 TL."
+            }
+        },
+        "YAŞAR ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tüm Fakülteler": "42.500 TL.",
+                "Yüksekokul Ücretleri": "21.750 TL ile 42.500 TL arasında.",
+                "Hazırlık Sınıfı": "42.500 TL."
+            }
+        },
+        "YEDİTEPE ÜNİVERSİTESİ": {
+            "Fees": {
+                "Diş Hekimliği Fakültesi": "85.000 TL.",
+                "Tıp Fakültesi": "78.000 TL.",
+                "Lisans Programları": "35.000 TL ile 65.000 TL arasında.",
+                "Yüksekokul Ücretleri": "25.000 TL ile 28.500 TL arasında.",
+                "Hazırlık Sınıfı": "22.500 TL."
+            }
+        },
+        "YÜKSEK İHTİSAS ÜNİVERSİTESİ": {
+            "Fees": {
+                "Tıp Fakültesi": "62.000 TL.",
+                "Lisans Programları": "29.000 TL ile 35.000 TL arasında.",
+                "Yüksekokul Ücretleri": "20.000 TL."
+            }
+        },
+        "KKTC ÜNİVERSİTELERİ": {
+            "Fees": {
+                "ODTÜ KUZEY KIBRIS KAMPUSU": "37.590 TL.",
+                "İTÜ KIBRIS KAMPUSU": "25.000 TL.",
+                "ADA KENT ÜNİVERSİTESİ": {
+                    "Diş Hekimliği": "52.000 TL.",
+                    "Diğer": "17.000 TL ile 28.000 TL arasında.",
+                    "Hazırlık Sınıfı": "15.000 TL."
+                },
+                "YAKIN DOĞU ÜNİVERSİTESİ": {
+                    "Tıp Fakültesi": "75.500 TL.",
+                    "Diş Hekimliği": "62.000 TL.",
+                    "Lisans Programları": "32.400 TL ile 56.000 TL arasında.",
+                    "Yüksekokul Ücretleri": "30.600 TL ile 32.400 TL arasında.",
+                    "Hazırlık Sınıfı": "30.000 TL."
+                },
+                "ULUSLARARASI KIBRIS ÜNİVERSİTESİ": {
+                    "Lisans Programları": "27.000 TL ile 40.800 TL arasında.",
+                    "Ön Lisans Programları": "24.600 TL.",
+                    "Hazırlık Sınıfı": "27.000 TL."
+                },
+                "KIBRIS AMERİKAN ÜNİVERSİTESİ": {
+                    "Lisans Programları": "16.000 TL ile 24.000 TL arasında.",
+                    "İngilizce Hazırlık": "16.000 TL.",
+                    "Ön Lisans Programları": "14.000 TL ile 15.000 TL arasında."
+                },
+                "LEFKE AVRUPA ÜNİVERSİTESİ": {
+                    "Lisans Programları": "21.700 TL ile 46.700 TL arasında.",
+                    "Ön Lisans Programları": "20.700 TL.",
+                    "Hazırlık Sınıfı": "24.700 TL."
+                },
+                "GİRNE AMERİKAN ÜNİVERSİTESİ": {
+                    "Lisans Programları": "23.000 TL ile 39.960 TL arasında.",
+                    "Yüksekokul Programları": "21.600 TL ile 24.000 TL arasında.",
+                    "Pilotaj": "36.000 TL.",
+                    "Hazırlık Sınıfı": "23.000 TL."
+                },
+                "DOĞU AKDENİZ ÜNİVERSİTESİ": {
+                    "Tıp Fakültesi ve Diş Hekimliği": "53.880 TL.",
+                    "Lisans Programları": "21.250 TL ile 35.410 TL arasında.",
+                    "Ön Lisans Programları": "20.020 TL."
+                },
+                "GİRNE ÜNİVERSİTESİ": {
+                    "Tıp Fakültesi": "75.500 TL.",
+                    "Diş Hekimliği": "62.000 TL.",
+                    "Lisans Programları": "32.400 TL ile 41.300 TL.",
+                    "Hemşirelik Programı ve Meslek Yüksekokulu Programları": "30.600 TL."
+                },
+                "KIBRIS İLİM ÜNİVERSİTESİ": {
+                    "Lisans Programları": "15.000 TL ile 27.600 TL arasında.",
+                    "Ön Lisans Programları": "9.000 TL ile 15.000 TL arasında."
+                },
+                "ULUSLARARASI FİNAL ÜNİVERSİTESİ": {
+                    "Lisans Programları": "22.000 TL ile 29.400 TL arasında."
+                }
+            }
+        }
+    }
+}
