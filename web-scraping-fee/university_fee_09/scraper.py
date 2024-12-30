@@ -4,7 +4,7 @@ from scrapegraphai.graphs import SmartScraperGraph
 # Define the configuration for the scraping pipeline
 graph_config = {
     "llm": {
-        "api_key": "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",
+
         "model": "openai/gpt-4o-mini",
     },
     "verbose": True,
